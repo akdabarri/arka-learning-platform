@@ -1,137 +1,239 @@
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,6,11,20&height=240&section=header&text=A.R.K.A.&fontSize=72&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Adaptive%20Reasoning%20%26%20Knowledge%20Architecture&descAlignY=58&descSize=20" alt="ARKA Header Banner" width="100%" />
+# 🐍 A.R.K.A.
+### Adaptive Reasoning & Knowledge Architecture
 
 <p align="center">
-  <strong>Platform Gamifikasi Edukasi Berpikir Komputasional & Pemetaan Metakognisi Siswa Sekolah Dasar</strong><br />
-  <em>Dioptimalkan untuk Kurikulum Merdeka (Fase A, B, dan C) Berbasis Perancah Predict-Observe-Explain (POE)</em>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1B5E20,100:FBC02D&height=220&section=header&text=A.R.K.A.&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Adaptive%20Reasoning%20%26%20Knowledge%20Architecture&descAlignY=60&descSize=18" />
 </p>
 
 <p align="center">
-  <a href="https://arkagame.web.id" target="_blank">
-    <img src="https://img.shields.io/badge/Production_Domain-arkagame.web.id-2563EB?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Domain" />
-  </a>
-  <img src="https://img.shields.io/badge/Next.js-15_(App_Router)-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
+  <strong>Gamified Computational Thinking & Metacognitive Learning Platform for Elementary Students</strong>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Pedagogi-Predict--Observe--Explain_(POE)-purple?style=flat-square" alt="Pedagogi POE" />
-  <img src="https://img.shields.io/badge/Jenjang_Sasaran-Kelas_1--6_SD-orange?style=flat-square" alt="Jenjang SD" />
-  <img src="https://img.shields.io/badge/Total_Level-25_Tantangan-blue?style=flat-square" alt="25 Levels" />
-  <img src="https://img.shields.io/badge/Algoritma_Bantuan-A*_Pathfinding-teal?style=flat-square" alt="A* Pathfinding" />
-  <img src="https://img.shields.io/badge/Kenyamanan_Afektif-Bebas_Peringkat_Publik-2ea44f?style=flat-square" alt="Afektif" />
-  <img src="https://img.shields.io/badge/Lisensi-MIT-green?style=flat-square" alt="Lisensi" />
+  A learning environment designed to develop computational thinking through
+  <strong>Predict–Observe–Explain (POE)</strong>, adaptive challenges, and
+  process-oriented learning analytics.
 </p>
 
-</div>
+<p align="center">
+
+![Domain](https://img.shields.io/badge/Domain-Computational%20Thinking-2E7D32?style=flat-square)
+![Framework](https://img.shields.io/badge/Framework-Next.js%2015-000000?style=flat-square&logo=next.js)
+![Language](https://img.shields.io/badge/Language-TypeScript-3178C6?style=flat-square&logo=typescript)
+![Styling](https://img.shields.io/badge/Styling-Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss)
+![Database](https://img.shields.io/badge/Database-Supabase-3ECF8E?style=flat-square&logo=supabase)
+![Method](https://img.shields.io/badge/Method-POE-FBC02D?style=flat-square)
+![Levels](https://img.shields.io/badge/Levels-25-1565C0?style=flat-square)
+![Pathfinding](https://img.shields.io/badge/Pathfinding-A*-1B5E20?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
+
+</p>
 
 ---
 
-# 📑 Daftar Isi
+## 1. Overview
 
-1. [Prinsip Filosofis & Latar Belakang Riset](#1-prinsip-filosofis--latar-belakang-riset)
-2. [Kerangka Pedagogis & Metakognisi POE](#2-kerangka-pedagogis--metakognisi-poe)
-   - [Model 4 Kuadran Nalar Metakognisi](#model-4-kuadran-nalar-metakognisi)
-   - [Matematika Kalkulasi Radar 5 Dimensi Berpikir Komputasional](#matematika-kalkulasi-radar-5-dimensi-berpikir-komputasional)
-3. [Struktur Petualangan 25 Level Solaria](#3-struktur-petualangan-25-level-solaria)
-4. [Mekanika & Fitur Gameplay Utama](#4-mekanika--fitur-gameplay-utama)
-   - [Palet Balok Perintah Visual](#palet-balok-perintah-visual)
-   - [Algoritma A* Pathfinding](#algoritma-a-pathfinding-bantuan-kristal-surya)
-   - [Hanggar Kostum Robot & Kustomisasi](#hanggar-kostum-robot--kustomisasi-slider-hue-0360)
-   - [Sistem Transisi & Splashscreen Sinematik](#sistem-transisi--splashscreen-sinematik)
-5. [Portal Riset & Analisis Guru](#5-portal-riset--analisis-guru-dashboard)
-6. [Arsitektur Teknis & Tumpukan Teknologi](#6-arsitektur-teknis--tumpukan-teknologi)
-7. [Skema Basis Data Supabase](#7-skema-basis-data-supabase-ddl-sql)
-8. [Panduan Instalasi & Eksekusi Lokal](#8-panduan-instalasi--eksekusi-lokal)
-9. [Konfigurasi Deployment & Domain Vercel](#9-konfigurasi-deployment--domain-vercel)
-10. [Struktur File Repositori](#10-struktur-file-repositori)
-11. [Peneliti, Kontributor & Lisensi](#11-peneliti-kontributor--lisensi)
+**A.R.K.A. (Adaptive Reasoning & Knowledge Architecture)** is a gamified learning platform designed to introduce and strengthen **Computational Thinking (CT)** and **metacognitive awareness** among elementary school students.
 
----
+Rather than treating learning as a process of simply obtaining the correct answer, A.R.K.A. focuses on **how students reason, predict, observe outcomes, revise strategies, and explain their decisions**.
 
-## 1. Prinsip Filosofis & Latar Belakang Riset
+The platform combines:
 
-**A.R.K.A. (Adaptive Reasoning & Knowledge Architecture)** dikembangkan sebagai respons empiris terhadap tantangan pembelajaran komputasi pada jenjang pendidikan dasar di Indonesia.
+- Computational Thinking
+- Predict–Observe–Explain (POE)
+- Gamified learning
+- Spatial reasoning
+- Algorithmic reasoning
+- Problem decomposition
+- Metacognitive reflection
+- Process-oriented learning analytics
+- Adaptive learning progression
+- A* pathfinding
+- Teacher-oriented learning dashboards
 
-Media belajar *coding* untuk anak sering kali berorientasi pada hasil akhir, misalnya apakah karakter berhasil mencapai tujuan atau tidak, tanpa mengukur proses kognitif, kehati-hatian dalam merencanakan, serta kesadaran metakognitif siswa ketika menghadapi kesalahan (*debugging*).
-
-### Pilar Nilai Utama
-
-- **Human-Centered & Child-Safe**  
-  Antarmuka responsif tanpa iklan, tanpa pelacakan pihak ketiga yang invasif, dan dirancang dengan mempertimbangkan karakteristik pengguna anak.
-
-- **Bebas Rivalitas Toksik (*Leaderboard-Free*)**  
-  Menghilangkan papan skor publik (*public ranking*) untuk mengurangi tekanan sosial dan memberikan ruang yang lebih aman bagi siswa dengan kemampuan belajar yang beragam.
-
-- **Perancah Konstruktivisme (*Scaffolding*)**  
-  Pola pikir komputasional dikembangkan secara bertahap, mulai dari sekuensial linear, orientasi spasial relatif, mekanika lompatan, hingga abstraksi pengulangan melalui *loop*.
-
----
-
-## 2. Kerangka Pedagogis & Metakognisi POE
-
-Inti arsitektur evaluasi A.R.K.A. mengadopsi model pembelajaran **Predict-Observe-Explain (POE)** dari White & Gunstone (1992) yang dipadukan dengan konsep metakognisi dari Flavell (1979).
+The central learning cycle is:
 
 ```text
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                             SIKLUS POE ARKA                                │
-└─────────────────────────────────────────────────────────────────────────────┘
-                                      │
-                                      ▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ 1. PREDICT                                                                  │
-│                                                                             │
-│ Siswa menyusun balok perintah algoritma, kemudian membuat prediksi          │
-│ metakognitif: "Apakah rangkaian balok ini akan berhasil mencapai sasaran    │
-│ tanpa mengalami tabrakan?"                                                  │
-└─────────────────────────────────────────────────────────────────────────────┘
-                                      │
-                                      ▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ 2. OBSERVE                                                                  │
-│                                                                             │
-│ Eksekusi simulasi dijalankan secara bertahap (650 ms/step). Siswa           │
-│ mengamati gerak robot secara langsung pada kisi pulau dan membandingkan     │
-│ visualisasi mental dengan hasil eksekusi aktual.                            │
-└─────────────────────────────────────────────────────────────────────────────┘
-                                      │
-                                      ▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ 3. EXPLAIN                                                                  │
-│                                                                             │
-│ Setelah simulasi, sistem memunculkan dialog refleksi.                       │
-│                                                                             │
-│ Jika berhasil: siswa mengonfirmasi apakah keberhasilan telah diprediksi.    │
-│ Jika gagal: sistem menunjukkan lokasi tabrakan atau batas pulau agar        │
-│ siswa dapat merumuskan hipotesis dan strategi perbaikan.                    │
-└─────────────────────────────────────────────────────────────────────────────┘
+PREDICT
+   ↓
+OBSERVE
+   ↓
+EXPLAIN
+   ↓
+REFLECT
+   ↓
+REVISE STRATEGY
+   ↓
+NEXT CHALLENGE
 ```
 
-### Model 4 Kuadran Nalar Metakognisi
+This makes A.R.K.A. different from conventional educational games that primarily reward answer accuracy.
 
-Sistem telemetri mengklasifikasikan setiap sesi siswa ke dalam matriks status nalar berikut:
+---
 
-| Kuadran | Prediksi Awal | Hasil Nyata | Percobaan | Kategori Pedagogis | Tindak Lanjut Guru |
-| :--- | :---: | :---: | :---: | :--- | :--- |
-| **True Mastery** | Akurat | Sukses | Ke-1 | Kemahiran sejati & reflektif | Diberikan tantangan optimalisasi balok |
-| **Reflective Struggle** | Kurang tepat | Berhasil setelah debugging | > 1 | Ketekunan berpikir positif | Diapresiasi atas proses perbaikan logika |
-| **Serendipity** | Ragu / salah prediksi | Sukses | Ke-1 | Keberhasilan tidak disengaja | Ditantang menjelaskan mengapa algoritma berhasil |
-| **Overconfidence** | Sangat yakin | Gagal | > 1 | Ilusi kompetensi | Dibimbing membaca peta kisi dan koordinat hambatan |
+# 2. Core Learning Philosophy
 
-### Matematika Kalkulasi Radar 5 Dimensi Berpikir Komputasional
+A.R.K.A. is built around the principle that computational thinking should not be reduced to programming syntax.
 
-Dasbor pengajar memproses telemetri mentah menjadi **lima indikator baku pada skala 0–100%**.
+For elementary learners, computational thinking can be developed through structured reasoning activities involving:
 
-#### 1. Dekomposisi
+1. **Decomposition**
+2. **Pattern Recognition**
+3. **Abstraction**
+4. **Algorithmic Thinking**
+5. **Spatial Reasoning**
+6. **Debugging**
+7. **Strategic Planning**
+8. **Metacognitive Reflection**
+
+The platform therefore evaluates both:
+
+> **What the student produces**
+
+and
+
+> **How the student arrives at that result.**
+
+---
+
+# 3. Predict–Observe–Explain (POE)
+
+The primary pedagogical framework of A.R.K.A. is **Predict–Observe–Explain (POE)**.
+
+## 3.1 Predict
+
+Before interacting with a challenge, students are asked to predict what will happen.
+
+Example:
+
+> "Which route will allow the character to reach the castle using the fewest moves?"
+
+The student selects or constructs a prediction before execution.
+
+---
+
+## 3.2 Observe
+
+Students execute their strategy and observe the resulting behavior.
+
+The system records relevant learning telemetry such as:
+
+- Attempts
+- Block usage
+- Movement sequence
+- Errors
+- Hints
+- Completion status
+- Prediction accuracy
+- Time spent
+- Strategy changes
+
+---
+
+## 3.3 Explain
+
+After observing the result, students explain why their prediction was correct or incorrect.
+
+The explanation stage encourages students to identify:
+
+- What they expected
+- What actually happened
+- Why the result differed
+- What strategy caused the outcome
+- What they would change
+
+---
+
+## 3.4 Reflect
+
+The final stage asks students to reflect on the strategy they used.
+
+This creates a complete learning cycle:
+
+```text
+Prediction
+    ↓
+Action
+    ↓
+Observation
+    ↓
+Explanation
+    ↓
+Reflection
+    ↓
+Strategy Revision
+```
+
+---
+
+# 4. Metacognitive Dimensions
+
+A.R.K.A. uses several process indicators to construct a learning profile.
+
+The current conceptual profile consists of five dimensions:
+
+| Dimension | Description |
+|---|---|
+| Dekomposisi | Ability to break a complex problem into manageable actions |
+| Penalaran Spasial | Ability to reason about positions, routes, and spatial relationships |
+| Efisiensi Kode | Ability to construct concise and efficient solutions |
+| Metakognisi POE | Ability to predict, compare, explain, and reflect on outcomes |
+| Kemandirian | Ability to solve challenges with decreasing dependence on assistance |
+
+The resulting profile can be represented through a radar visualization.
+
+---
+
+# 5. Learning Analytics Model
+
+A.R.K.A. does not rely solely on final correctness.
+
+The system captures behavioral and cognitive traces throughout the learning process.
+
+### Example telemetry
+
+```text
+Student
+│
+├── Prediction
+│   ├── Prediction Choice
+│   └── Prediction Accuracy
+│
+├── Execution
+│   ├── Attempts
+│   ├── Blocks Used
+│   ├── Errors
+│   └── Completion
+│
+├── Assistance
+│   ├── Hints Used
+│   └── Retry Behavior
+│
+└── Reflection
+    ├── Explanation
+    └── Strategy Revision
+```
+
+This allows the teacher dashboard to provide a more informative picture of student learning than a simple score.
+
+---
+
+# 6. Mathematical Indicators
+
+The following formulas represent the current operational indicators used in the prototype.
+
+> **Note:** These formulas are operational metrics for the prototype and can be further validated empirically if A.R.K.A. is used as a formal research instrument.
+
+---
+
+## 6.1 Dekomposisi
+
+The current prototype estimates decomposition-related efficiency from the average efficiency ratio across completed challenges.
 
 $$
 \text{Dekomposisi}
 =
-\min
-\left(
+\min\left(
 100,
 \left(
 \frac{1}{N}
@@ -142,54 +244,126 @@ $$
 \right)
 $$
 
-#### 2. Penalaran Spasial
+where:
+
+- $N$ = number of completed challenges
+- $\text{EfficiencyRatio}_i$ = efficiency ratio for challenge $i$
+- $85$ = maximum contribution factor used by the prototype
+- $\min(100,\cdot)$ = prevents the score from exceeding 100
+
+---
+
+## 6.2 Penalaran Spasial
+
+Spatial reasoning is operationalized through the student's ability to solve spatial challenges with a limited number of attempts.
 
 $$
 \text{Penalaran Spasial}
 =
 \frac{
-\sum [\text{Attempts}_i \leq 2]
+\sum_{i=1}^{N}
+\mathbf{1}\left(
+\text{Attempts}_i \leq 2
+\right)
 }{
 N
 }
 \times 100\%
 $$
 
-#### 3. Efisiensi Kode (*Parsimony*)
+where:
+
+- $N$ = number of relevant spatial challenges
+- $\text{Attempts}_i$ = number of attempts for challenge $i$
+- $\mathbf{1}(\cdot)$ = indicator function
+
+The indicator function is defined as:
+
+$$
+\mathbf{1}(A)
+=
+\begin{cases}
+1, & \text{if } A \text{ is true} \\
+0, & \text{if } A \text{ is false}
+\end{cases}
+$$
+
+---
+
+## 6.3 Efisiensi Kode (Parsimony)
+
+Code efficiency evaluates whether a student can solve a challenge using a number of blocks that does not exceed the predefined optimal solution.
 
 $$
 \text{Efisiensi Kode}
 =
 \frac{
-\sum [\text{BlockCount}_i \leq \text{OptimalBlocks}_i]
+\sum_{i=1}^{N}
+\mathbf{1}\left(
+\text{BlockCount}_i
+\leq
+\text{OptimalBlocks}_i
+\right)
 }{
 N
 }
 \times 100\%
 $$
 
-#### 4. Metakognisi POE
+where:
+
+- $\text{BlockCount}_i$ = number of blocks used
+- $\text{OptimalBlocks}_i$ = predefined optimal number of blocks
+- $N$ = number of evaluated challenges
+
+---
+
+## 6.4 Metakognisi POE
+
+The current prototype operationalizes POE metacognition through prediction accuracy.
 
 $$
 \text{Metakognisi POE}
 =
 \frac{
-\sum [\text{PredictionAccuracy}_i = \text{true}]
+\sum_{i=1}^{N}
+\mathbf{1}\left(
+\text{PredictionAccuracy}_i
+=
+\text{true}
+\right)
 }{
 N
 }
 \times 100\%
 $$
 
-#### 5. Kemandirian (*Persistence*)
+where:
+
+- $N$ = number of POE challenges
+- $\text{PredictionAccuracy}_i$ = whether prediction $i$ corresponds to the observed outcome
+
+The metric is intended to capture the student's ability to anticipate an outcome before execution.
+
+---
+
+## 6.5 Kemandirian (Persistence)
+
+The current prototype estimates independence from the student's reliance on hints.
 
 $$
 \text{Kemandirian}
 =
 \left(
-1 -
+1
+-
 \frac{
-\sum [\text{HintsUsed}_i = \text{true}]
+\sum_{i=1}^{N}
+\mathbf{1}\left(
+\text{HintsUsed}_i
+=
+\text{true}
+\right)
 }{
 N
 }
@@ -197,356 +371,501 @@ N
 \times 100\%
 $$
 
----
+where:
 
-## 3. Struktur Petualangan 25 Level Solaria
+- $N$ = number of evaluated challenges
+- $\text{HintsUsed}_i$ = whether a hint was requested on challenge $i$
 
-Setiap level dirancang berdasarkan ukuran kisi, orientasi awal robot, rintangan, target, serta batas jumlah balok optimal (*parsimony budget*).
-
-```text
-[Zona 1: Pesisir Pantura]
-Level 1–5
-Sekuensial Linear & Belok
-            │
-            ▼
-[Zona 2: Hutan Karang]
-Level 6–10
-Geometri Sudut & Labirin
-            │
-            ▼
-[Zona 3: Tebing Kristal]
-Level 11–15
-Mekanika Lompatan 2 Petak
-            │
-            ▼
-[Zona 4: Dataran Geotermal]
-Level 16–20
-Abstraksi Loop Pengulangan
-            │
-            ▼
-[Zona 5: Inti Reaktor Surya]
-Level 21–25
-Sintesis Kompleks Mandiri
-```
-
-| Zona | Level | Target Misi | Grid | Posisi Awal & Hadap | Rintangan | Balok Optimal | Balok Tersedia |
-| :---: | :---: | :--- | :---: | :---: | :---: | :---: | :--- |
-| **1** | **1** | Baterai Tenaga | 4 × 4 | (0,3) • Atas | 0 | **3** | Maju |
-| **1** | **2** | Tunas Mangrove | 4 × 4 | (0,3) • Atas | 1 | **4** | Maju, Kanan |
-| **1** | **3** | Pompa Air Surya | 4 × 4 | (1,3) • Atas | 2 | **5** | Maju, Kanan, Kiri |
-| **1** | **4** | Baterai Cadangan | 5 × 5 | (3,3) • Kiri | 3 | **6** | Maju, Kanan, Kiri |
-| **1** | **5** | Inti Sel Surya | 5 × 5 | (0,4) • Kanan | 4 | **7** | Maju, Kanan, Kiri |
-| **2** | **6** | Tunas Mangrove | 5 × 5 | (0,4) • Atas | 5 | **6** | Maju, Kanan, Kiri |
-| **2** | **7** | Pompa Geotermal | 5 × 5 | (4,4) • Atas | 6 | **7** | Maju, Kanan, Kiri |
-| **2** | **8** | Baterai Kapasitor | 6 × 6 | (1,5) • Atas | 7 | **8** | Maju, Kanan, Kiri |
-| **2** | **9** | Hutan Bakau Pesisir | 6 × 6 | (0,3) • Kanan | 8 | **8** | Maju, Kanan, Kiri |
-| **2** | **10** | Reaktor Kristal Hijau | 6 × 6 | (0,5) • Atas | 9 | **9** | Maju, Kanan, Kiri |
-| **3** | **11** | Baterai Dataran Tinggi | 5 × 5 | (0,4) • Atas | 4 | **5** | Maju, Kanan, Kiri, Lompat |
-| **3** | **12** | Pompa Saluran Tebing | 6 × 6 | (1,5) • Kanan | 6 | **6** | Maju, Kanan, Kiri, Lompat |
-| **3** | **13** | Bibit Mangrove Jurang | 6 × 6 | (2,0) • Bawah | 7 | **7** | Maju, Kanan, Kiri, Lompat |
-| **3** | **14** | Baterai Puncak Batu | 6 × 6 | (0,4) • Atas | 8 | **7** | Maju, Kanan, Kiri, Lompat |
-| **3** | **15** | Pembangkit Foton Ungu | 6 × 6 | (0,5) • Kanan | 9 | **8** | Maju, Kanan, Kiri, Lompat |
-| **4** | **16** | Baterai Lembah Uap | 6 × 6 | (0,5) • Kanan | 5 | **5** | Maju, Kanan, Kiri, Loop 2× |
-| **4** | **17** | Pompa Sirkulasi Panas | 6 × 6 | (1,5) • Atas | 7 | **6** | Maju, Kanan, Kiri, Loop 2× |
-| **4** | **18** | Reboisasi Magma Dingin | 6 × 6 | (0,4) • Atas | 8 | **7** | Maju, Kanan, Kiri, Loop 2× |
-| **4** | **19** | Mangrove Belerang | 7 × 7 | (1,6) • Kanan | 9 | **7** | Maju, Kanan, Kiri, Loop 2× |
-| **4** | **20** | Generator Surya Utama | 7 × 7 | (0,6) • Atas | 10 | **8** | Maju, Kanan, Kiri, Loop 2× |
-| **5** | **21** | Kapasitor Inti Sektor | 7 × 7 | (0,6) • Atas | 10 | **7** | Semua Balok Terbuka |
-| **5** | **22** | Pompa Pendingin Inti | 7 × 7 | (6,6) • Kiri | 12 | **8** | Semua Balok Terbuka |
-| **5** | **23** | Mangrove Biosfer Kaca | 7 × 7 | (0,4) • Kanan | 13 | **8** | Semua Balok Terbuka |
-| **5** | **24** | Baterai Kuantum Puncak | 8 × 8 | (1,7) • Atas | 14 | **9** | Semua Balok Terbuka |
-| **5** | **25** | Inti Abadi Solaria | 8 × 8 | (0,7) • Atas | 16 | **10** | Semua Balok Terbuka |
+A higher score indicates lower reliance on assistance.
 
 ---
 
-## 4. Mekanika & Fitur Gameplay Utama
+# 7. Game Structure
 
-### Palet Balok Perintah Visual
+A.R.K.A. contains **25 progressive learning levels**.
 
-Setiap balok mewakili instruksi fundamental dalam pemrograman:
+The levels are organized to gradually increase:
 
-- ⬆️ **Maju 1 Langkah (`MOVE_FORWARD`)**  
-  Menggerakkan Arka satu petak sesuai arah hadap.
+- Cognitive complexity
+- Number of decisions
+- Spatial complexity
+- Algorithmic complexity
+- Need for planning
+- Need for debugging
+- Metacognitive reflection
 
-- ↪️ **Putar Kanan 90° (`TURN_RIGHT`)**  
-  Mengubah arah searah jarum jam:
-  `UP → RIGHT → DOWN → LEFT`.
+### Level progression
 
-- ↩️ **Putar Kiri 90° (`TURN_LEFT`)**  
-  Mengubah arah berlawanan jarum jam:
-  `UP → LEFT → DOWN → RIGHT`.
+| Level | Focus |
+|---:|---|
+| 1 | Basic Sequence |
+| 2 | Simple Patterns |
+| 3 | Direction & Movement |
+| 4 | Sequential Instructions |
+| 5 | Pattern Recognition |
+| 6 | Simple Decomposition |
+| 7 | Conditional Logic |
+| 8 | Route Planning |
+| 9 | Spatial Relationships |
+| 10 | Algorithmic Sequencing |
+| 11 | Debugging |
+| 12 | Efficient Routes |
+| 13 | Nested Decisions |
+| 14 | Multi-Step Planning |
+| 15 | Constraint-Based Reasoning |
+| 16 | Optimization |
+| 17 | Complex Pathfinding |
+| 18 | Algorithm Revision |
+| 19 | Strategic Decomposition |
+| 20 | Multi-Constraint Problems |
+| 21 | Advanced Route Planning |
+| 22 | Debugging & Optimization |
+| 23 | Independent Strategy |
+| 24 | Integrated Computational Thinking |
+| 25 | Master Challenge |
 
-- ⚡ **Lompat 2 Petak (`JUMP_FORWARD`)**  
-  Melompati satu petak rintangan atau jurang menuju petak kedua di depannya.
+---
 
-- 🔁 **Loop Pengulangan 2× (`REPEAT_2X`)**  
-  Memperkenalkan konsep dasar *loop* dengan mengulangi instruksi maju sebanyak dua kali untuk meningkatkan efisiensi program.
+# 8. Gameplay Mechanics
 
-### Algoritma A* Pathfinding
+A.R.K.A. intentionally avoids excessive gamification elements such as competitive rankings and aggressive reward systems.
 
-Ketika siswa mengalami kebuntuan (*impasse*), mereka dapat menukarkan **10 Kristal Surya** untuk memproyeksikan lintasan terpendek (*shortest path*) pada kanvas permainan.
+The primary goal is to maintain attention while keeping the **learning process** central.
 
-Algoritma A* menggunakan fungsi:
+### Core mechanics
+
+- Progressive levels
+- Challenge completion
+- Limited attempts
+- Hints
+- Character skins
+- Exploration
+- Achievement tracking
+- Strategy revision
+- Learning analytics
+- Teacher monitoring
+
+---
+
+# 9. Why There Is No Global Leaderboard
+
+A.R.K.A. intentionally does not prioritize a global leaderboard.
+
+For elementary learners, excessive competition can shift the goal from:
+
+> "How can I reason better?"
+
+into:
+
+> "How can I score higher than someone else?"
+
+Instead, A.R.K.A. emphasizes:
+
+- Personal progress
+- Strategy improvement
+- Challenge mastery
+- Reflection
+- Independent problem solving
+
+The design therefore favors **mastery-oriented progression** over ranking-oriented competition.
+
+---
+
+# 10. A* Pathfinding
+
+Several spatial challenges use the **A*** pathfinding algorithm.
+
+A* evaluates candidate paths using:
 
 $$
-f(n) = g(n) + h(n)
+f(n)=g(n)+h(n)
 $$
 
-dengan:
+where:
 
-- $g(n)$ = jarak aktual dari titik awal menuju node $n$.
-- $h(n)$ = estimasi jarak Manhattan menuju target.
+- $f(n)$ = estimated total cost
+- $g(n)$ = cost from the starting node to node $n$
+- $h(n)$ = heuristic estimate from node $n$ to the target
+
+For grid-based movement, a Manhattan-distance heuristic can be used:
 
 $$
 h(n)
 =
-|x_n - x_{\text{target}}|
+|x_n-x_{\text{goal}}|
 +
-|y_n - y_{\text{target}}|
+|y_n-y_{\text{goal}}|
 $$
 
-### Hanggar Kostum Robot & Kustomisasi Slider Hue 0°–360°
-
-Sistem kustomisasi memberikan stimulasi gamifikasi positif tanpa mekanisme *pay-to-win*:
-
-- 🔵 **Arka Penjelajah** — Standar, gratis
-- 🟢 **Zamrud Surya** — 25 Kristal
-- 🔴 **Vulkanik Mecha** — 35 Kristal
-- 🟣 **Quantum Amethyst** — 50 Kristal
-- 🟡 **Cyber Gold** — 75 Kristal
-- 🔷 **Plasma Neon** — 85 Kristal
-- 🌈 **Prisma Pelangi RGB** — 120 Kristal
-- 🎨 **Arka Maestro DIY** — 180 Kristal
-
-**Arka Maestro DIY** dilengkapi kontrol interaktif **Hue Slider 0°–360°**, *color swatch preview*, dan *preset quick-pick*.
-
-### Sistem Transisi & Splashscreen Sinematik
-
-Navigasi antarhalaman seperti Beranda, Guru, dan Bermain dilengkapi overlay transisi terintegrasi yang mencakup:
-
-- Indikator *spinning dashed halo* dan cincin *ping*.
-- *Progress bar* dengan animasi gradasi.
-- Pesan kontekstual.
-- Sinkronisasi audio prosedural melalui Web Audio API.
+This allows the system to calculate efficient routes and compare student-generated solutions with an algorithmically derived reference path.
 
 ---
 
-## 5. Portal Riset & Analisis Guru (Dashboard)
+# 11. Character & Skin System
 
-Halaman `/teacher` dirancang untuk guru kelas, guru BK, dan peneliti akademik.
+Students can personalize their learning experience through collectible character skins.
 
-### Fitur Utama
+The skin system is intentionally designed as a secondary motivational layer rather than the primary learning objective.
 
-- 🛡️ **Akses Mandiri Pengajar**  
-  Pengajar dapat mengakses data melalui tombol pada bilah atas tanpa menggunakan profil siswa.
-
-- 🔍 **Multi-Filter**  
-  Data dapat difilter berdasarkan:
-  - Nama sekolah
-  - Jenjang kelas
-  - Nama siswa
-
-- 📈 **Visualisasi Interaktif**
-  - **Radar Chart 5 Dimensi** untuk memetakan profil keterampilan komputasional.
-  - **Donut Chart POE** untuk distribusi empat kuadran metakognisi.
-  - **Histogram 25 Level** untuk mengidentifikasi level dengan tingkat kesulitan tertinggi.
-
-- 💾 **Ekspor Data CSV**  
-  Data telemetri dapat diekspor untuk analisis lebih lanjut menggunakan SPSS, R, atau Python Pandas.
-
----
-
-## 6. Arsitektur Teknis & Tumpukan Teknologi
+Example categories:
 
 ```text
-┌────────────────────────────────────────────────────────────┐
-│                      CLIENT / BROWSER                       │
-│                                                            │
-│  Next.js 15 App Router • React • Tailwind CSS              │
-│  Canvas Grid Engine • Web Audio Synthesizer                │
-└──────────────────────────────┬─────────────────────────────┘
-                               │
-                               │ HTTPS / REST / WSS
-                               ▼
-┌────────────────────────────────────────────────────────────┐
-│                    BACKEND & STORAGE                        │
-│                                                            │
-│  Supabase Cloud Platform                                   │
-│  PostgreSQL Engine                                         │
-│                                                            │
-│  • Telemetry & student profile tables                      │
-│  • Next.js API Route (/telemetry) as fallback endpoint     │
-└──────────────────────────────┬─────────────────────────────┘
-                               │
-                               │ CI / CD
-                               ▼
-┌────────────────────────────────────────────────────────────┐
-│                   EDGE INFRASTRUCTURE                       │
-│                                                            │
-│  Vercel Edge Network                                       │
-│  SSL / HTTPS                                               │
-│  Custom Domain: arkagame.web.id                            │
-└────────────────────────────────────────────────────────────┘
+Starter
+  ↓
+Explorer
+  ↓
+Strategist
+  ↓
+Problem Solver
+  ↓
+Master
 ```
 
-### Technology Stack
+The visual design follows a simple 2D educational game aesthetic with a restrained palette dominated by:
+
+- Green
+- Yellow
+- Blue
+
+The system avoids excessive visual effects to reduce cognitive and visual overload.
+
+---
+
+# 12. Teacher Dashboard
+
+The teacher dashboard provides an overview of student learning activity.
+
+### Student-level information
+
+- Completion progress
+- Level mastery
+- Attempts
+- Hints
+- Prediction accuracy
+- Efficiency
+- Reflection activity
+- Computational-thinking profile
+
+### Class-level information
+
+Teachers can inspect:
+
+```text
+Class
+│
+├── Overall Progress
+│
+├── Level Completion
+│
+├── Common Difficulties
+│
+├── Computational Thinking Profile
+│
+└── Student-Level Analytics
+```
+
+The dashboard is intended to support instructional decision-making rather than simply display scores.
+
+---
+
+# 13. System Architecture
+
+A.R.K.A. uses a modern web architecture.
+
+```text
+┌─────────────────────────────────────┐
+│             STUDENT UI              │
+│       Next.js + TypeScript          │
+│       Tailwind CSS + React          │
+└─────────────────┬───────────────────┘
+                  │
+                  ▼
+┌─────────────────────────────────────┐
+│        GAME & LEARNING ENGINE       │
+│                                     │
+│  • Level Engine                     │
+│  • POE Engine                       │
+│  • Pathfinding                      │
+│  • Scoring                          │
+│  • Telemetry                        │
+│  • Progress Tracking                │
+└─────────────────┬───────────────────┘
+                  │
+                  ▼
+┌─────────────────────────────────────┐
+│              SUPABASE               │
+│                                     │
+│  • PostgreSQL                       │
+│  • Authentication                   │
+│  • Student Data                     │
+│  • Learning Telemetry               │
+│  • Progress                         │
+└─────────────────┬───────────────────┘
+                  │
+                  ▼
+┌─────────────────────────────────────┐
+│          TEACHER DASHBOARD          │
+│                                     │
+│  • Class Analytics                  │
+│  • Student Profiles                 │
+│  • Progress Monitoring               │
+│  • Learning Indicators              │
+└─────────────────────────────────────┘
+```
+
+---
+
+# 14. Technology Stack
 
 | Layer | Technology |
-| :--- | :--- |
-| Framework | Next.js 15 App Router |
-| UI Library | React |
-| Language | TypeScript 5.x |
-| Styling | Tailwind CSS 3.x |
+|---|---|
+| Framework | Next.js 15 |
+| Language | TypeScript |
+| UI | React |
+| Styling | Tailwind CSS |
+| Backend | Supabase |
 | Database | PostgreSQL |
-| Backend Platform | Supabase |
+| Authentication | Supabase Auth |
 | Deployment | Vercel |
-| Domain | arkagame.web.id |
-| Audio | Web Audio API |
 | Pathfinding | A* |
-| Data Export | CSV |
+| Learning Model | POE |
+| Analytics | Custom Telemetry |
+| Version Control | Git / GitHub |
 
 ---
 
-## 7. Skema Basis Data Supabase (DDL SQL)
+# 15. Database Structure
 
-Jalankan perintah berikut melalui **SQL Editor** pada dashboard Supabase.
+The current prototype uses Supabase/PostgreSQL.
+
+A simplified conceptual structure is:
+
+```text
+users
+ │
+ ├── student_profiles
+ │
+ ├── progress
+ │
+ ├── attempts
+ │
+ ├── predictions
+ │
+ ├── explanations
+ │
+ └── achievements
+```
+
+Example SQL structure:
 
 ```sql
--- 1. Ekstensi UUID
-create extension if not exists "uuid-ossp";
-
--- 2. Tabel Telemetri Aktivitas Level & POE
-create table if not exists public.arka_telemetry (
-  id uuid default gen_random_uuid() primary key,
-  student_name text not null,
-  student_class text not null,
-  school_name text not null,
-  level_id integer not null,
-  attempts integer not null default 1,
-  block_count integer not null,
-  optimal_blocks integer not null,
-  efficiency_ratio numeric(4,2) not null,
-  prediction_accuracy boolean not null,
-  hints_used boolean not null default false,
-  duration_seconds integer not null,
-  created_at timestamp with time zone
-    default timezone('utc'::text, now()) not null
+create table profiles (
+  id uuid primary key references auth.users(id),
+  name text,
+  role text default 'student',
+  created_at timestamptz default now()
 );
 
--- 3. Tabel Profil Akun & Progres Gamifikasi Siswa
-create table if not exists public.arka_student_profiles (
-  id text primary key,
-  student_name text not null,
-  student_class text not null,
-  school_name text not null,
-  grade_level integer default 4,
-  crystals integer default 30,
-  active_skin text default 'BLUE',
-  unlocked_skins jsonb default '["BLUE"]'::jsonb,
-  level_stars jsonb default '{}'::jsonb,
-  current_level integer default 1,
-  last_active timestamp with time zone
-    default timezone('utc'::text, now()) not null
+create table progress (
+  id bigint generated by default as identity primary key,
+  user_id uuid references profiles(id),
+  level integer not null,
+  completed boolean default false,
+  attempts integer default 0,
+  hints_used integer default 0,
+  score numeric default 0,
+  created_at timestamptz default now()
 );
 
--- 4. Indeks Kinerja Pencarian
-create index if not exists idx_telemetry_school_class
-on public.arka_telemetry(school_name, student_class);
+create table predictions (
+  id bigint generated by default as identity primary key,
+  user_id uuid references profiles(id),
+  level integer not null,
+  prediction text,
+  correct boolean,
+  created_at timestamptz default now()
+);
 
-create index if not exists idx_telemetry_level
-on public.arka_telemetry(level_id);
-
-create index if not exists idx_telemetry_created
-on public.arka_telemetry(created_at desc);
-
--- 5. Row Level Security
-alter table public.arka_telemetry enable row level security;
-alter table public.arka_student_profiles enable row level security;
-
-create policy "Izinkan Baca Publik Telemetri"
-on public.arka_telemetry
-for select
-using (true);
-
-create policy "Izinkan Tulis Publik Telemetri"
-on public.arka_telemetry
-for insert
-with check (true);
-
-create policy "Izinkan Baca Profil Siswa"
-on public.arka_student_profiles
-for select
-using (true);
-
-create policy "Izinkan Tulis Profil Siswa"
-on public.arka_student_profiles
-for all
-using (true);
+create table reflections (
+  id bigint generated by default as identity primary key,
+  user_id uuid references profiles(id),
+  level integer not null,
+  explanation text,
+  created_at timestamptz default now()
+);
 ```
-
-> **Catatan keamanan:** kebijakan RLS di atas memberikan akses publik yang sangat luas. Untuk deployment penelitian nyata yang menangani data siswa, kebijakan tersebut sebaiknya diperketat menggunakan autentikasi, role-based access control, dan prinsip *least privilege*.
 
 ---
 
-## 8. Panduan Instalasi & Eksekusi Lokal
+# 16. Security Considerations
 
-### Prasyarat
+A.R.K.A. handles student-related learning data. Therefore, database security must be treated as a core implementation requirement.
 
-- **Node.js:** `>= 18.18.0`
-- **npm:** `>= 9.x`
-- Direkomendasikan menggunakan Node.js LTS 20.x atau versi LTS yang kompatibel dengan proyek.
+### Important
 
-### 1. Kloning Repositori
+During early prototyping, permissive Supabase Row Level Security policies may be used for development.
 
-```bash
-git clone https://github.com/USERNAME_ANDA/arka-game.git
-cd arka-game
+For example:
+
+```sql
+using (true)
 ```
 
-### 2. Instalasi Dependensi
+or:
+
+```sql
+with check (true)
+```
+
+should **not** be considered production-ready policies for student data.
+
+For production deployment, policies should restrict access according to:
+
+- Authenticated user identity
+- Student ownership
+- Teacher role
+- Class membership
+- Administrative privileges
+
+Example conceptual policy:
+
+```text
+Student
+  ↓
+Can access own learning data
+
+Teacher
+  ↓
+Can access assigned class data
+
+Administrator
+  ↓
+Can manage authorized platform data
+```
+
+Never expose sensitive student information through unrestricted public database policies.
+
+---
+
+# 17. Project Structure
+
+A simplified project structure:
+
+```text
+arka/
+│
+├── app/
+│   ├── page.tsx
+│   ├── dashboard/
+│   ├── game/
+│   ├── levels/
+│   ├── profile/
+│   └── teacher/
+│
+├── components/
+│   ├── game/
+│   ├── dashboard/
+│   ├── ui/
+│   └── charts/
+│
+├── lib/
+│   ├── supabase/
+│   ├── pathfinding/
+│   ├── scoring/
+│   ├── analytics/
+│   └── poe/
+│
+├── data/
+│   └── levels/
+│
+├── public/
+│   ├── assets/
+│   ├── characters/
+│   └── levels/
+│
+├── types/
+│   └── index.ts
+│
+├── package.json
+├── tsconfig.json
+├── tailwind.config.ts
+└── README.md
+```
+
+---
+
+# 18. Installation
+
+## Prerequisites
+
+Make sure the following are installed:
+
+- Node.js 20+
+- npm
+- Git
+- Supabase account
+
+---
+
+## Clone Repository
+
+```bash
+git clone https://github.com/your-username/arka.git
+cd arka
+```
+
+---
+
+## Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 3. Konfigurasi Environment Variables
+---
 
-Buat file `.env.local` pada root proyek:
+## Configure Environment Variables
+
+Create:
+
+```text
+.env.local
+```
+
+Then add:
 
 ```env
-NEXT_PUBLIC_SUPABASE_URL=https://proyek-anda.supabase.co
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 ```
 
-**Jangan commit `.env.local` ke repositori publik.**
+Do not commit `.env.local` to GitHub.
 
-Pastikan `.gitignore` mencakup:
+---
 
-```gitignore
-.env
-.env.local
-.env.*.local
-```
-
-### 4. Menjalankan Development Server
+## Run Development Server
 
 ```bash
 npm run dev
 ```
 
-Kemudian buka:
+Open:
 
 ```text
 http://localhost:3000
 ```
 
-### 5. Production Build
+---
+
+# 19. Build for Production
+
+Run:
 
 ```bash
 npm run build
 ```
 
-Untuk menjalankan hasil build:
+Then:
 
 ```bash
 npm start
@@ -554,117 +873,319 @@ npm start
 
 ---
 
-## 9. Konfigurasi Deployment & Domain Vercel
+# 20. Deployment
 
-Aplikasi dikonfigurasi untuk deployment menggunakan **Vercel** dengan domain:
+A.R.K.A. is designed to be deployable through Vercel.
 
-**https://arkagame.web.id**
-
-### Konfigurasi DNS
-
-| Tipe Record | Host | Target | Keterangan |
-| :--- | :--- | :--- | :--- |
-| **A** | `@` | `216.198.79.1` | Mengarahkan domain utama ke Vercel |
-| **CNAME** | `www` | `2aa29f5fa06b966d.vercel-dns-017.com` | Mengarahkan subdomain `www` ke Vercel |
-
-### Deployment
-
-Secara umum, proses deployment dapat dilakukan melalui:
+Typical deployment workflow:
 
 ```text
 GitHub Repository
-       │
-       ▼
+       ↓
      Vercel
-       │
-       ▼
-Production Build
-       │
-       ▼
-arkagame.web.id
+       ↓
+   Build Next.js
+       ↓
+Production Deployment
+       ↓
+    A.R.K.A.
 ```
+
+Required environment variables must be configured inside the Vercel project settings.
 
 ---
 
-## 10. Struktur File Repositori
+# 21. Learning Flow
+
+The complete student experience follows:
 
 ```text
-arka-game/
-├── public/
-│   └── ...                             # Favicon, ikon PWA, dan aset media
-│
-├── src/
-│   ├── app/
-│   │   ├── api/
-│   │   │   └── telemetry/
-│   │   │       └── route.ts            # REST API pencatatan telemetri
-│   │   │
-│   │   ├── play/
-│   │   │   └── page.tsx                # Gameplay utama & siklus POE
-│   │   │
-│   │   ├── teacher/
-│   │   │   └── page.tsx                # Dashboard analitik & ekspor CSV
-│   │   │
-│   │   ├── layout.tsx                  # Root layout & metadata
-│   │   └── page.tsx                    # Landing page
-│   │
-│   ├── components/
-│   │   ├── canvas/
-│   │   │   └── GridCanvas.tsx          # Grid, robot & pathfinding
-│   │   │
-│   │   ├── charts/
-│   │   │   └── RadarChart.tsx          # Radar chart 5 dimensi
-│   │   │
-│   │   ├── poe/
-│   │   │   └── POEModal.tsx            # Dialog Predict-Observe-Explain
-│   │   │
-│   │   └── ui/
-│   │       ├── CrystalIcon.tsx         # Ikon kristal Solaria
-│   │       ├── GuidebookModal.tsx      # Buku pedoman naratif
-│   │       ├── HangarModal.tsx         # Toko skin & kustomisasi
-│   │       ├── ThemeToggle.tsx         # Mode gelap & terang
-│   │       ├── TutorialModal.tsx       # Tutorial interaktif
-│   │       └── ZoneHubModal.tsx        # Navigasi 25 level
-│   │
-│   └── lib/
-│       ├── levelsData.ts               # Data 25 level
-│       ├── pathfinding.ts              # Algoritma A*
-│       ├── soundManager.ts             # Web Audio API
-│       ├── supabase.ts                 # Supabase client
-│       └── types.ts                    # TypeScript interfaces
-│
-├── .env.example                        # Template environment variables
-├── next.config.ts                      # Konfigurasi Next.js
-├── tailwind.config.ts                  # Konfigurasi Tailwind
-├── tsconfig.json                       # Konfigurasi TypeScript
-└── package.json                        # Dependensi & scripts
+LOGIN
+  ↓
+DASHBOARD
+  ↓
+SELECT LEVEL
+  ↓
+PREDICT
+  ↓
+SOLVE
+  ↓
+OBSERVE RESULT
+  ↓
+EXPLAIN
+  ↓
+REFLECT
+  ↓
+ANALYTICS UPDATE
+  ↓
+NEXT CHALLENGE
+```
+
+The important distinction is that **completion is not the only endpoint**.
+
+Student interaction generates process data that can be used to understand learning behavior.
+
+---
+
+# 22. Example Challenge
+
+A typical challenge can be represented as:
+
+```text
+┌─────────────────────────────┐
+│       CHALLENGE              │
+│                              │
+│  Help the character reach   │
+│  the castle.                 │
+│                              │
+│  PREDICT                     │
+│  Which route will work?      │
+│                              │
+│  [ Route A ] [ Route B ]     │
+│                              │
+└──────────────┬──────────────┘
+               ↓
+          EXECUTE
+               ↓
+┌─────────────────────────────┐
+│          OBSERVE             │
+│                              │
+│  Did the character reach     │
+│  the destination?            │
+└──────────────┬──────────────┘
+               ↓
+           EXPLAIN
+               ↓
+┌─────────────────────────────┐
+│ Why did your strategy work? │
+│                             │
+│ [ Student explanation ]     │
+└──────────────┬──────────────┘
+               ↓
+            REFLECT
+               ↓
+       NEXT CHALLENGE
 ```
 
 ---
 
-## 11. Peneliti, Kontributor & Lisensi
+# 23. Design Principles
 
-Proyek media pembelajaran ini dikembangkan untuk tujuan penelitian, inovasi pedagogi komputasi, dan pengembangan media pembelajaran anak di Indonesia.
+A.R.K.A. follows several interface and interaction principles.
 
-### Pengembang
+### 23.1 Learning First
 
-- **Pengembang Utama:** Muhamad Akda Fathul Barri
-- **Institusi / Riset:** Riset Pendidikan Berpikir Komputasional Sekolah Dasar
-- **Platform:** A.R.K.A. — Adaptive Reasoning & Knowledge Architecture
-- **Lisensi:** [MIT License](LICENSE)
+Gamification should support learning rather than dominate it.
+
+### 23.2 Minimal Cognitive Load
+
+Interfaces avoid unnecessary visual decoration and excessive simultaneous stimuli.
+
+### 23.3 Process Visibility
+
+Important learning actions should be observable and measurable.
+
+### 23.4 Progressive Complexity
+
+Challenges increase gradually rather than introducing high complexity immediately.
+
+### 23.5 Reflective Interaction
+
+Students are encouraged to compare their predictions with actual outcomes.
+
+### 23.6 Personal Progress
+
+The system emphasizes individual improvement rather than constant comparison with other students.
 
 ---
 
-<div align="center">
+# 24. Research Potential
 
-### A.R.K.A.
+A.R.K.A. can serve not only as an educational application but also as a research platform.
 
-**Adaptive Reasoning & Knowledge Architecture**
+Potential research data include:
 
-*Learning computational thinking through reasoning, prediction, observation, and reflection.*
+- Interaction sequences
+- Prediction accuracy
+- Attempt patterns
+- Hint dependency
+- Solution efficiency
+- Strategy changes
+- Reflection responses
+- Level progression
+- Computational-thinking profiles
 
-<br />
+This makes the platform suitable for research involving:
 
-[Production Website](https://arkagame.web.id)
+- Computational Thinking
+- Educational Technology
+- Learning Analytics
+- Metacognition
+- Gamification
+- Human–Computer Interaction
+- Adaptive Learning
+- Digital Learning Environments
 
-</div>
+However, the operational indicators should be empirically validated before being interpreted as established psychological or educational constructs.
+
+---
+
+# 25. Development Roadmap
+
+## Phase 1 — Core Prototype
+
+- [x] Basic interface
+- [x] Authentication
+- [x] Level system
+- [x] Student progress
+- [x] Basic gameplay
+- [x] POE interaction
+
+## Phase 2 — Learning Analytics
+
+- [x] Attempt tracking
+- [x] Hint tracking
+- [x] Prediction tracking
+- [x] Efficiency metrics
+- [x] Student profile
+
+## Phase 3 — Teacher Dashboard
+
+- [x] Student progress
+- [x] Class overview
+- [x] Learning profile
+- [x] Analytics visualization
+
+## Phase 4 — Advanced Learning Engine
+
+- [ ] More adaptive difficulty
+- [ ] Improved metacognitive indicators
+- [ ] Advanced learning analytics
+- [ ] Strategy classification
+- [ ] Empirical validation
+
+## Phase 5 — Research Deployment
+
+- [ ] Classroom pilot
+- [ ] Expert validation
+- [ ] Usability study
+- [ ] Learning outcome analysis
+- [ ] Longitudinal learning analytics
+
+---
+
+# 26. Limitations
+
+The current version of A.R.K.A. is a prototype.
+
+Several aspects should therefore be interpreted cautiously.
+
+### Construct validity
+
+The five learning indicators are currently operational metrics rather than fully validated psychometric constructs.
+
+### Metacognition measurement
+
+Prediction accuracy alone does not represent the complete construct of metacognition.
+
+### Persistence measurement
+
+Hint independence is related to autonomy but should not automatically be interpreted as persistence.
+
+### Decomposition measurement
+
+Efficiency-based metrics should be empirically examined before being treated as a direct measurement of decomposition ability.
+
+### Spatial reasoning
+
+Attempt count is an indirect behavioral indicator and should ideally be combined with task-specific spatial reasoning measures.
+
+These limitations provide directions for subsequent empirical validation.
+
+---
+
+# 27. Contribution
+
+A.R.K.A. proposes an integrated learning environment in which:
+
+```text
+Gamification
+      +
+Computational Thinking
+      +
+POE
+      +
+Metacognitive Reflection
+      +
+Learning Analytics
+      ↓
+Process-Oriented Learning Environment
+```
+
+The central contribution is not merely the presentation of educational game content, but the integration of **reasoning, prediction, action, observation, explanation, and reflection** into a single learning workflow.
+
+---
+
+# 28. Author & Credit
+
+## Creator
+
+**M. Akda Barri**
+
+Conceptualization, system architecture, learning design, computational-thinking framework, POE integration, game mechanics, implementation, learning analytics design, and documentation.
+
+<p align="center">
+  <strong>A.R.K.A. — Adaptive Reasoning & Knowledge Architecture</strong>
+</p>
+
+<p align="center">
+  Designed and developed by <strong>M. Akda Barri</strong>
+</p>
+
+---
+
+# 29. License
+
+This project is released under the **MIT License**.
+
+You are free to:
+
+- Use
+- Copy
+- Modify
+- Merge
+- Publish
+- Distribute
+- Sublicense
+
+subject to the conditions of the MIT License.
+
+See [`LICENSE`](LICENSE) for the complete license text.
+
+---
+
+# 30. Citation
+
+If you use A.R.K.A. in an academic project, research project, presentation, or educational development, please credit:
+
+```text
+Barri, M. A. (2026).
+A.R.K.A.: Adaptive Reasoning & Knowledge Architecture.
+Gamified Computational Thinking and Metacognitive Learning Platform.
+```
+
+---
+
+<p align="center">
+
+### 🐍 Learn. Predict. Observe. Explain. Reflect.
+
+**A.R.K.A.**
+
+*Adaptive Reasoning & Knowledge Architecture*
+
+</p>
+
+<p align="center">
+  © 2026 M. Akda Barri. Released under the MIT License.
+</p>
