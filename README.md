@@ -6,52 +6,84 @@
 </p>
 
 <p align="center">
-  <strong>Gamified Computational Thinking & Metacognitive Learning Platform for Elementary Students</strong>
+  <strong>Platform Pembelajaran Gamifikasi untuk Computational Thinking dan Metakognisi Siswa Sekolah Dasar</strong>
 </p>
 
 <p align="center">
-  A learning environment designed to develop computational thinking through
-  <strong>Predict–Observe–Explain (POE)</strong>, adaptive challenges, and
-  process-oriented learning analytics.
+  A.R.K.A. mengintegrasikan Predict–Observe–Explain (POE), tantangan adaptif,
+  penalaran komputasional, dan analitik proses belajar dalam satu lingkungan pembelajaran.
 </p>
 
 <p align="center">
 
 ![Domain](https://img.shields.io/badge/Domain-Computational%20Thinking-2E7D32?style=flat-square)
 ![Framework](https://img.shields.io/badge/Framework-Next.js%2015-000000?style=flat-square&logo=next.js)
-![Language](https://img.shields.io/badge/Language-TypeScript-3178C6?style=flat-square&logo=typescript)
-![Styling](https://img.shields.io/badge/Styling-Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss)
-![Database](https://img.shields.io/badge/Database-Supabase-3ECF8E?style=flat-square&logo=supabase)
-![Method](https://img.shields.io/badge/Method-POE-FBC02D?style=flat-square)
-![Levels](https://img.shields.io/badge/Levels-25-1565C0?style=flat-square)
+![Bahasa](https://img.shields.io/badge/Bahasa-TypeScript-3178C6?style=flat-square&logo=typescript)
+![Antarmuka](https://img.shields.io/badge/UI-Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss)
+![Basis Data](https://img.shields.io/badge/Database-Supabase-3ECF8E?style=flat-square&logo=supabase)
+![Pendekatan](https://img.shields.io/badge/Pendekatan-POE-FBC02D?style=flat-square)
+![Level](https://img.shields.io/badge/Level-25-1565C0?style=flat-square)
 ![Pathfinding](https://img.shields.io/badge/Pathfinding-A*-1B5E20?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
+![Lisensi](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
 
 </p>
 
 ---
 
-## 1. Overview
+## Daftar Isi
 
-**A.R.K.A. (Adaptive Reasoning & Knowledge Architecture)** is a gamified learning platform designed to introduce and strengthen **Computational Thinking (CT)** and **metacognitive awareness** among elementary school students.
+- [1. Tentang A.R.K.A.](#1-tentang-arka)
+- [2. Tujuan Pembelajaran](#2-tujuan-pembelajaran)
+- [3. Prinsip Pembelajaran](#3-prinsip-pembelajaran)
+- [4. Siklus Predict–Observe–Explain](#4-siklus-predictobserveexplain)
+- [5. Dimensi Pembelajaran](#5-dimensi-pembelajaran)
+- [6. Indikator dan Rumus](#6-indikator-dan-rumus)
+- [7. Struktur Level](#7-struktur-level)
+- [8. Mekanisme Permainan](#8-mekanisme-permainan)
+- [9. Algoritma A*](#9-algoritma-a)
+- [10. Sistem Karakter dan Skin](#10-sistem-karakter-dan-skin)
+- [11. Dasbor Guru](#11-dasbor-guru)
+- [12. Arsitektur Sistem](#12-arsitektur-sistem)
+- [13. Teknologi](#13-teknologi)
+- [14. Struktur Basis Data](#14-struktur-basis-data)
+- [15. Keamanan Data](#15-keamanan-data)
+- [16. Struktur Proyek](#16-struktur-proyek)
+- [17. Instalasi](#17-instalasi)
+- [18. Menjalankan Mode Produksi](#18-menjalankan-mode-produksi)
+- [19. Deployment](#19-deployment)
+- [20. Alur Pembelajaran](#20-alur-pembelajaran)
+- [21. Contoh Tantangan](#21-contoh-tantangan)
+- [22. Prinsip Desain](#22-prinsip-desain)
+- [23. Potensi Penelitian](#23-potensi-penelitian)
+- [24. Keterbatasan](#24-keterbatasan)
+- [25. Peta Pengembangan](#25-peta-pengembangan)
+- [26. Kontributor](#26-kontributor)
+- [27. Sitasi](#27-sitasi)
+- [28. Lisensi](#28-lisensi)
 
-Rather than treating learning as a process of simply obtaining the correct answer, A.R.K.A. focuses on **how students reason, predict, observe outcomes, revise strategies, and explain their decisions**.
+---
 
-The platform combines:
+## 1. Tentang A.R.K.A.
+
+**A.R.K.A. (Adaptive Reasoning & Knowledge Architecture)** adalah platform pembelajaran berbasis permainan yang dirancang untuk mengembangkan **Computational Thinking (CT)** dan **kesadaran metakognitif** siswa sekolah dasar.
+
+A.R.K.A. tidak hanya berfokus pada apakah siswa memperoleh jawaban yang benar, tetapi juga pada **proses berpikir yang digunakan untuk memperoleh jawaban tersebut**.
+
+Sistem menggabungkan:
 
 - Computational Thinking
 - Predict–Observe–Explain (POE)
-- Gamified learning
-- Spatial reasoning
-- Algorithmic reasoning
-- Problem decomposition
-- Metacognitive reflection
-- Process-oriented learning analytics
-- Adaptive learning progression
-- A* pathfinding
-- Teacher-oriented learning dashboards
+- Gamifikasi pembelajaran
+- Penalaran spasial
+- Penalaran algoritmik
+- Dekomposisi masalah
+- Refleksi metakognitif
+- Analitik proses pembelajaran
+- Progresi tantangan
+- Algoritma A* untuk pencarian rute
+- Dasbor pemantauan guru
 
-The central learning cycle is:
+Alur utama pembelajaran:
 
 ```text
 PREDICT
@@ -62,178 +94,179 @@ EXPLAIN
    ↓
 REFLECT
    ↓
-REVISE STRATEGY
+REVISI STRATEGI
    ↓
-NEXT CHALLENGE
+TANTANGAN BERIKUTNYA
 ```
 
-This makes A.R.K.A. different from conventional educational games that primarily reward answer accuracy.
+Dengan pendekatan tersebut, aktivitas bermain menjadi bagian dari proses pembelajaran, bukan sekadar mekanisme pemberian skor.
 
 ---
 
-# 2. Core Learning Philosophy
+## 2. Tujuan Pembelajaran
 
-A.R.K.A. is built around the principle that computational thinking should not be reduced to programming syntax.
+A.R.K.A. dirancang untuk membantu siswa mengembangkan kemampuan berikut:
 
-For elementary learners, computational thinking can be developed through structured reasoning activities involving:
-
-1. **Decomposition**
-2. **Pattern Recognition**
-3. **Abstraction**
-4. **Algorithmic Thinking**
-5. **Spatial Reasoning**
-6. **Debugging**
-7. **Strategic Planning**
-8. **Metacognitive Reflection**
-
-The platform therefore evaluates both:
-
-> **What the student produces**
-
-and
-
-> **How the student arrives at that result.**
+1. Memecah masalah kompleks menjadi langkah yang lebih sederhana.
+2. Mengenali pola dan hubungan.
+3. Menyusun urutan instruksi secara logis.
+4. Memahami kondisi dan konsekuensi suatu keputusan.
+5. Merencanakan rute atau strategi.
+6. Mengidentifikasi kesalahan dalam solusi.
+7. Membandingkan prediksi dengan hasil aktual.
+8. Menjelaskan alasan di balik suatu keputusan.
+9. Merevisi strategi setelah memperoleh umpan balik.
+10. Menyelesaikan tantangan secara semakin mandiri.
 
 ---
 
-# 3. Predict–Observe–Explain (POE)
+## 3. Prinsip Pembelajaran
 
-The primary pedagogical framework of A.R.K.A. is **Predict–Observe–Explain (POE)**.
+A.R.K.A. dibangun berdasarkan beberapa prinsip utama.
 
-## 3.1 Predict
+### 3.1 Berorientasi pada Proses
 
-Before interacting with a challenge, students are asked to predict what will happen.
+Keberhasilan siswa tidak hanya ditentukan oleh hasil akhir.
 
-Example:
+Sistem juga memperhatikan:
 
-> "Which route will allow the character to reach the castle using the fewest moves?"
+- Prediksi
+- Percobaan
+- Kesalahan
+- Penggunaan bantuan
+- Efisiensi solusi
+- Penjelasan
+- Refleksi
+- Perubahan strategi
 
-The student selects or constructs a prediction before execution.
+### 3.2 Computational Thinking Tanpa Ketergantungan pada Sintaks Pemrograman
+
+Computational Thinking diperkenalkan melalui aktivitas pemecahan masalah yang sesuai dengan karakteristik siswa sekolah dasar.
+
+Aktivitas dapat berupa:
+
+- Menyusun urutan
+- Menemukan pola
+- Memecah masalah
+- Menentukan rute
+- Memperbaiki kesalahan
+- Mengoptimalkan solusi
+- Mengambil keputusan berdasarkan kondisi
+
+### 3.3 Progresi Bertahap
+
+Kompleksitas tantangan meningkat secara bertahap dari aktivitas sederhana menuju masalah yang membutuhkan perencanaan dan optimasi.
+
+### 3.4 Refleksi
+
+Siswa didorong untuk tidak berhenti pada jawaban benar atau salah, tetapi memahami:
+
+> Apa yang saya perkirakan?
+
+> Apa yang sebenarnya terjadi?
+
+> Mengapa hasilnya demikian?
+
+> Apa yang akan saya ubah?
+
+### 3.5 Gamifikasi yang Terkendali
+
+Elemen permainan digunakan untuk mendukung motivasi dan keberlanjutan belajar tanpa menjadikan kompetisi sebagai tujuan utama.
 
 ---
 
-## 3.2 Observe
+## 4. Siklus Predict–Observe–Explain
 
-Students execute their strategy and observe the resulting behavior.
+A.R.K.A. menggunakan **Predict–Observe–Explain (POE)** sebagai kerangka utama interaksi pembelajaran.
 
-The system records relevant learning telemetry such as:
+### 4.1 Predict
 
-- Attempts
-- Block usage
-- Movement sequence
-- Errors
-- Hints
-- Completion status
-- Prediction accuracy
-- Time spent
-- Strategy changes
+Sebelum menjalankan solusi, siswa membuat prediksi.
 
----
+Contoh:
 
-## 3.3 Explain
+> "Rute mana yang akan membuat karakter mencapai kastel dengan jumlah langkah paling sedikit?"
 
-After observing the result, students explain why their prediction was correct or incorrect.
+Siswa memilih atau menyusun prediksi sebelum melakukan eksekusi.
 
-The explanation stage encourages students to identify:
+### 4.2 Observe
 
-- What they expected
-- What actually happened
-- Why the result differed
-- What strategy caused the outcome
-- What they would change
+Siswa menjalankan solusi dan mengamati hasilnya.
 
----
+Sistem dapat mencatat:
 
-## 3.4 Reflect
+- Jumlah percobaan
+- Jumlah blok
+- Kesalahan
+- Penggunaan petunjuk
+- Status penyelesaian
+- Ketepatan prediksi
+- Waktu pengerjaan
+- Perubahan strategi
 
-The final stage asks students to reflect on the strategy they used.
+### 4.3 Explain
 
-This creates a complete learning cycle:
+Setelah melihat hasil, siswa menjelaskan alasan di balik hasil tersebut.
+
+Siswa dapat diarahkan untuk menjawab:
+
+- Apa yang saya perkirakan?
+- Apa yang terjadi?
+- Mengapa hasilnya berbeda?
+- Bagian strategi mana yang menyebabkan hasil tersebut?
+- Apa yang perlu diperbaiki?
+
+### 4.4 Reflect
+
+Siswa merefleksikan strategi yang digunakan dan mempertimbangkan perubahan untuk tantangan berikutnya.
+
+Siklus lengkap:
 
 ```text
-Prediction
-    ↓
-Action
-    ↓
-Observation
-    ↓
-Explanation
-    ↓
-Reflection
-    ↓
-Strategy Revision
+PREDICT
+   ↓
+ACTION
+   ↓
+OBSERVE
+   ↓
+EXPLAIN
+   ↓
+REFLECT
+   ↓
+REVISI STRATEGI
 ```
 
 ---
 
-# 4. Metacognitive Dimensions
+## 5. Dimensi Pembelajaran
 
-A.R.K.A. uses several process indicators to construct a learning profile.
+Profil pembelajaran A.R.K.A. saat ini terdiri atas lima dimensi operasional.
 
-The current conceptual profile consists of five dimensions:
-
-| Dimension | Description |
+| Dimensi | Deskripsi |
 |---|---|
-| Dekomposisi | Ability to break a complex problem into manageable actions |
-| Penalaran Spasial | Ability to reason about positions, routes, and spatial relationships |
-| Efisiensi Kode | Ability to construct concise and efficient solutions |
-| Metakognisi POE | Ability to predict, compare, explain, and reflect on outcomes |
-| Kemandirian | Ability to solve challenges with decreasing dependence on assistance |
+| Dekomposisi | Kemampuan memecah masalah menjadi langkah-langkah yang lebih terkelola |
+| Penalaran Spasial | Kemampuan memahami posisi, arah, hubungan ruang, dan rute |
+| Efisiensi Kode | Kemampuan menyusun solusi menggunakan blok secara ringkas dan efisien |
+| Metakognisi POE | Kemampuan memprediksi, membandingkan hasil, menjelaskan, dan merefleksikan proses |
+| Kemandirian | Kemampuan menyelesaikan tantangan dengan semakin sedikit ketergantungan pada bantuan |
 
-The resulting profile can be represented through a radar visualization.
-
----
-
-# 5. Learning Analytics Model
-
-A.R.K.A. does not rely solely on final correctness.
-
-The system captures behavioral and cognitive traces throughout the learning process.
-
-### Example telemetry
-
-```text
-Student
-│
-├── Prediction
-│   ├── Prediction Choice
-│   └── Prediction Accuracy
-│
-├── Execution
-│   ├── Attempts
-│   ├── Blocks Used
-│   ├── Errors
-│   └── Completion
-│
-├── Assistance
-│   ├── Hints Used
-│   └── Retry Behavior
-│
-└── Reflection
-    ├── Explanation
-    └── Strategy Revision
-```
-
-This allows the teacher dashboard to provide a more informative picture of student learning than a simple score.
+Profil dapat divisualisasikan menggunakan radar chart untuk memberikan gambaran relatif mengenai karakteristik proses belajar siswa.
 
 ---
 
-# 6. Mathematical Indicators
+## 6. Indikator dan Rumus
 
-The following formulas represent the current operational indicators used in the prototype.
+> **Catatan:** Rumus berikut merupakan **indikator operasional prototipe**, bukan instrumen psikometrik yang telah tervalidasi. Apabila A.R.K.A. digunakan untuk penelitian formal, setiap indikator perlu melalui proses validasi empiris.
 
-> **Note:** These formulas are operational metrics for the prototype and can be further validated empirically if A.R.K.A. is used as a formal research instrument.
+### 6.1 Dekomposisi
 
----
-
-## 6.1 Dekomposisi
-
-The current prototype estimates decomposition-related efficiency from the average efficiency ratio across completed challenges.
+Pada prototipe, indikator dekomposisi diperkirakan melalui rata-rata rasio efisiensi penyelesaian tantangan.
 
 $$
 \text{Dekomposisi}
 =
-\min\left(
+\min
+\left(
 100,
 \left(
 \frac{1}{N}
@@ -244,25 +277,24 @@ $$
 \right)
 $$
 
-where:
+Keterangan:
 
-- $N$ = number of completed challenges
-- $\text{EfficiencyRatio}_i$ = efficiency ratio for challenge $i$
-- $85$ = maximum contribution factor used by the prototype
-- $\min(100,\cdot)$ = prevents the score from exceeding 100
+- $N$ = jumlah tantangan yang diselesaikan.
+- $\text{EfficiencyRatio}_i$ = rasio efisiensi pada tantangan ke-$i$.
+- $85$ = faktor kontribusi maksimum yang digunakan dalam prototipe.
+- $\min(100,\cdot)$ = membatasi skor maksimum pada 100.
 
----
+### 6.2 Penalaran Spasial
 
-## 6.2 Penalaran Spasial
-
-Spatial reasoning is operationalized through the student's ability to solve spatial challenges with a limited number of attempts.
+Penalaran spasial pada prototipe dioperasionalkan melalui kemampuan menyelesaikan tantangan spasial dalam jumlah percobaan yang terbatas.
 
 $$
 \text{Penalaran Spasial}
 =
 \frac{
 \sum_{i=1}^{N}
-\mathbf{1}\left(
+\mathbf{1}
+\left(
 \text{Attempts}_i \leq 2
 \right)
 }{
@@ -271,35 +303,34 @@ N
 \times 100\%
 $$
 
-where:
+Keterangan:
 
-- $N$ = number of relevant spatial challenges
-- $\text{Attempts}_i$ = number of attempts for challenge $i$
-- $\mathbf{1}(\cdot)$ = indicator function
+- $N$ = jumlah tantangan spasial yang dievaluasi.
+- $\text{Attempts}_i$ = jumlah percobaan pada tantangan ke-$i$.
+- $\mathbf{1}(\cdot)$ = fungsi indikator.
 
-The indicator function is defined as:
+Fungsi indikator:
 
 $$
 \mathbf{1}(A)
 =
 \begin{cases}
-1, & \text{if } A \text{ is true} \\
-0, & \text{if } A \text{ is false}
+1, & \text{jika } A \text{ benar} \\
+0, & \text{jika } A \text{ salah}
 \end{cases}
 $$
 
----
+### 6.3 Efisiensi Kode (Parsimony)
 
-## 6.3 Efisiensi Kode (Parsimony)
-
-Code efficiency evaluates whether a student can solve a challenge using a number of blocks that does not exceed the predefined optimal solution.
+Efisiensi kode mengevaluasi kemampuan siswa menyelesaikan tantangan menggunakan jumlah blok yang tidak melebihi jumlah blok optimal yang telah ditentukan.
 
 $$
 \text{Efisiensi Kode}
 =
 \frac{
 \sum_{i=1}^{N}
-\mathbf{1}\left(
+\mathbf{1}
+\left(
 \text{BlockCount}_i
 \leq
 \text{OptimalBlocks}_i
@@ -310,24 +341,23 @@ N
 \times 100\%
 $$
 
-where:
+Keterangan:
 
-- $\text{BlockCount}_i$ = number of blocks used
-- $\text{OptimalBlocks}_i$ = predefined optimal number of blocks
-- $N$ = number of evaluated challenges
+- $\text{BlockCount}_i$ = jumlah blok yang digunakan pada tantangan ke-$i$.
+- $\text{OptimalBlocks}_i$ = jumlah blok optimal yang telah ditentukan untuk tantangan ke-$i$.
+- $N$ = jumlah tantangan yang dievaluasi.
 
----
+### 6.4 Metakognisi POE
 
-## 6.4 Metakognisi POE
-
-The current prototype operationalizes POE metacognition through prediction accuracy.
+Pada prototipe, metakognisi POE dioperasionalkan melalui ketepatan prediksi terhadap hasil observasi.
 
 $$
 \text{Metakognisi POE}
 =
 \frac{
 \sum_{i=1}^{N}
-\mathbf{1}\left(
+\mathbf{1}
+\left(
 \text{PredictionAccuracy}_i
 =
 \text{true}
@@ -338,18 +368,16 @@ N
 \times 100\%
 $$
 
-where:
+Keterangan:
 
-- $N$ = number of POE challenges
-- $\text{PredictionAccuracy}_i$ = whether prediction $i$ corresponds to the observed outcome
+- $N$ = jumlah tantangan yang menggunakan aktivitas prediksi.
+- $\text{PredictionAccuracy}_i$ = status ketepatan prediksi pada tantangan ke-$i$.
 
-The metric is intended to capture the student's ability to anticipate an outcome before execution.
+> **Catatan konseptual:** Ketepatan prediksi hanya merupakan salah satu indikator perilaku yang berkaitan dengan proses POE. Untuk mengukur metakognisi secara lebih komprehensif, indikator dapat dikembangkan dengan memasukkan kualitas refleksi, perubahan strategi, dan kemampuan menjelaskan alasan.
 
----
+### 6.5 Kemandirian
 
-## 6.5 Kemandirian (Persistence)
-
-The current prototype estimates independence from the student's reliance on hints.
+Pada prototipe, kemandirian diperkirakan berdasarkan tingkat ketergantungan siswa terhadap petunjuk.
 
 $$
 \text{Kemandirian}
@@ -359,7 +387,8 @@ $$
 -
 \frac{
 \sum_{i=1}^{N}
-\mathbf{1}\left(
+\mathbf{1}
+\left(
 \text{HintsUsed}_i
 =
 \text{true}
@@ -371,224 +400,209 @@ N
 \times 100\%
 $$
 
-where:
+Keterangan:
 
-- $N$ = number of evaluated challenges
-- $\text{HintsUsed}_i$ = whether a hint was requested on challenge $i$
+- $N$ = jumlah tantangan yang dievaluasi.
+- $\text{HintsUsed}_i$ = status penggunaan petunjuk pada tantangan ke-$i$.
+- Nilai yang lebih tinggi menunjukkan ketergantungan terhadap petunjuk yang lebih rendah.
 
-A higher score indicates lower reliance on assistance.
+> **Catatan konseptual:** Penggunaan petunjuk merupakan indikator kemandirian operasional, bukan pengukuran penuh terhadap persistence atau ketekunan. Pengukuran ketekunan yang lebih kuat dapat mempertimbangkan perilaku setelah kegagalan, jumlah percobaan, dan perubahan strategi.
 
 ---
 
-# 7. Game Structure
+## 7. Struktur Level
 
-A.R.K.A. contains **25 progressive learning levels**.
+A.R.K.A. memiliki **25 level** dengan peningkatan kompleksitas secara bertahap.
 
-The levels are organized to gradually increase:
-
-- Cognitive complexity
-- Number of decisions
-- Spatial complexity
-- Algorithmic complexity
-- Need for planning
-- Need for debugging
-- Metacognitive reflection
-
-### Level progression
-
-| Level | Focus |
+| Level | Fokus Pembelajaran |
 |---:|---|
-| 1 | Basic Sequence |
-| 2 | Simple Patterns |
-| 3 | Direction & Movement |
-| 4 | Sequential Instructions |
-| 5 | Pattern Recognition |
-| 6 | Simple Decomposition |
-| 7 | Conditional Logic |
-| 8 | Route Planning |
-| 9 | Spatial Relationships |
-| 10 | Algorithmic Sequencing |
+| 1 | Urutan Dasar |
+| 2 | Pengenalan Pola |
+| 3 | Arah dan Pergerakan |
+| 4 | Instruksi Berurutan |
+| 5 | Pengenalan Pola Lanjutan |
+| 6 | Dekomposisi Sederhana |
+| 7 | Logika Kondisional |
+| 8 | Perencanaan Rute |
+| 9 | Hubungan Spasial |
+| 10 | Penyusunan Algoritma |
 | 11 | Debugging |
-| 12 | Efficient Routes |
-| 13 | Nested Decisions |
-| 14 | Multi-Step Planning |
-| 15 | Constraint-Based Reasoning |
-| 16 | Optimization |
-| 17 | Complex Pathfinding |
-| 18 | Algorithm Revision |
-| 19 | Strategic Decomposition |
-| 20 | Multi-Constraint Problems |
-| 21 | Advanced Route Planning |
-| 22 | Debugging & Optimization |
-| 23 | Independent Strategy |
-| 24 | Integrated Computational Thinking |
-| 25 | Master Challenge |
+| 12 | Rute Efisien |
+| 13 | Keputusan Bertingkat |
+| 14 | Perencanaan Multi-Langkah |
+| 15 | Penalaran Berbasis Kendala |
+| 16 | Optimasi |
+| 17 | Pathfinding Kompleks |
+| 18 | Revisi Algoritma |
+| 19 | Dekomposisi Strategis |
+| 20 | Masalah Multi-Kendala |
+| 21 | Perencanaan Rute Lanjutan |
+| 22 | Debugging dan Optimasi |
+| 23 | Strategi Mandiri |
+| 24 | Integrasi Computational Thinking |
+| 25 | Tantangan Mastery |
 
 ---
 
-# 8. Gameplay Mechanics
+## 8. Mekanisme Permainan
 
-A.R.K.A. intentionally avoids excessive gamification elements such as competitive rankings and aggressive reward systems.
+A.R.K.A. menggunakan elemen gamifikasi yang berfokus pada progres individu.
 
-The primary goal is to maintain attention while keeping the **learning process** central.
+Mekanisme utama:
 
-### Core mechanics
+- Level bertahap
+- Penyelesaian tantangan
+- Percobaan
+- Petunjuk
+- Karakter
+- Skin
+- Pencapaian
+- Eksplorasi
+- Refleksi
+- Pelacakan progres
+- Analitik pembelajaran
 
-- Progressive levels
-- Challenge completion
-- Limited attempts
-- Hints
-- Character skins
-- Exploration
-- Achievement tracking
-- Strategy revision
-- Learning analytics
-- Teacher monitoring
+### Tidak menggunakan leaderboard global
 
----
+A.R.K.A. tidak memprioritaskan papan peringkat global.
 
-# 9. Why There Is No Global Leaderboard
+Tujuannya adalah menjaga orientasi siswa pada:
 
-A.R.K.A. intentionally does not prioritize a global leaderboard.
+- Perbaikan kemampuan
+- Penguasaan tantangan
+- Perbaikan strategi
+- Refleksi
+- Kemandirian
 
-For elementary learners, excessive competition can shift the goal from:
+Dengan demikian, fokus utama tetap pada:
 
-> "How can I reason better?"
+> **"Bagaimana saya dapat memperbaiki cara berpikir saya?"**
 
-into:
+bukan hanya:
 
-> "How can I score higher than someone else?"
-
-Instead, A.R.K.A. emphasizes:
-
-- Personal progress
-- Strategy improvement
-- Challenge mastery
-- Reflection
-- Independent problem solving
-
-The design therefore favors **mastery-oriented progression** over ranking-oriented competition.
+> **"Bagaimana saya dapat mengalahkan siswa lain?"**
 
 ---
 
-# 10. A* Pathfinding
+## 9. Algoritma A*
 
-Several spatial challenges use the **A*** pathfinding algorithm.
+Tantangan berbasis rute menggunakan algoritma **A*** untuk memperoleh solusi referensi.
 
-A* evaluates candidate paths using:
+Fungsi evaluasi A*:
 
 $$
-f(n)=g(n)+h(n)
+f(n) = g(n) + h(n)
 $$
 
-where:
+Keterangan:
 
-- $f(n)$ = estimated total cost
-- $g(n)$ = cost from the starting node to node $n$
-- $h(n)$ = heuristic estimate from node $n$ to the target
+- $f(n)$ = estimasi total biaya melalui node $n$.
+- $g(n)$ = biaya dari titik awal menuju node $n$.
+- $h(n)$ = estimasi biaya dari node $n$ menuju tujuan.
 
-For grid-based movement, a Manhattan-distance heuristic can be used:
+Untuk grid, salah satu heuristik yang dapat digunakan adalah jarak Manhattan:
 
 $$
 h(n)
 =
-|x_n-x_{\text{goal}}|
+|x_n-x_{\text{tujuan}}|
 +
-|y_n-y_{\text{goal}}|
+|y_n-y_{\text{tujuan}}|
 $$
 
-This allows the system to calculate efficient routes and compare student-generated solutions with an algorithmically derived reference path.
+Algoritma ini memungkinkan sistem:
+
+1. Mencari rute referensi.
+2. Menghitung efisiensi rute siswa.
+3. Membandingkan solusi siswa dengan solusi optimal atau referensi.
+4. Memberikan dasar untuk indikator efisiensi.
 
 ---
 
-# 11. Character & Skin System
+## 10. Sistem Karakter dan Skin
 
-Students can personalize their learning experience through collectible character skins.
+A.R.K.A. menyediakan sistem karakter dan skin sebagai elemen personalisasi.
 
-The skin system is intentionally designed as a secondary motivational layer rather than the primary learning objective.
-
-Example categories:
+Contoh progres:
 
 ```text
-Starter
-  ↓
-Explorer
-  ↓
-Strategist
-  ↓
-Problem Solver
-  ↓
+Pemula
+   ↓
+Penjelajah
+   ↓
+Strategis
+   ↓
+Pemecah Masalah
+   ↓
 Master
 ```
 
-The visual design follows a simple 2D educational game aesthetic with a restrained palette dominated by:
+Elemen visual menggunakan pendekatan 2D yang sederhana dan konsisten.
 
-- Green
-- Yellow
-- Blue
+Palet utama:
 
-The system avoids excessive visual effects to reduce cognitive and visual overload.
+- Hijau
+- Kuning
+- Biru
+
+Desain menghindari dekorasi visual berlebihan agar antarmuka tetap sesuai dengan kebutuhan siswa sekolah dasar.
 
 ---
 
-# 12. Teacher Dashboard
+## 11. Dasbor Guru
 
-The teacher dashboard provides an overview of student learning activity.
+Dasbor guru menyediakan informasi mengenai proses belajar siswa.
 
-### Student-level information
+### Informasi tingkat siswa
 
-- Completion progress
-- Level mastery
-- Attempts
-- Hints
-- Prediction accuracy
-- Efficiency
-- Reflection activity
-- Computational-thinking profile
+- Progres level
+- Penyelesaian tantangan
+- Jumlah percobaan
+- Penggunaan petunjuk
+- Ketepatan prediksi
+- Efisiensi solusi
+- Aktivitas refleksi
+- Profil Computational Thinking
 
-### Class-level information
-
-Teachers can inspect:
+### Informasi tingkat kelas
 
 ```text
-Class
-│
-├── Overall Progress
-│
-├── Level Completion
-│
-├── Common Difficulties
-│
-├── Computational Thinking Profile
-│
-└── Student-Level Analytics
+KELAS
+ │
+ ├── Progres Keseluruhan
+ │
+ ├── Penyelesaian Level
+ │
+ ├── Kesulitan Umum
+ │
+ ├── Profil Computational Thinking
+ │
+ └── Analitik Siswa
 ```
 
-The dashboard is intended to support instructional decision-making rather than simply display scores.
+Dasbor ditujukan untuk membantu guru memahami proses belajar, bukan hanya menampilkan nilai akhir.
 
 ---
 
-# 13. System Architecture
-
-A.R.K.A. uses a modern web architecture.
+## 12. Arsitektur Sistem
 
 ```text
 ┌─────────────────────────────────────┐
-│             STUDENT UI              │
-│       Next.js + TypeScript          │
-│       Tailwind CSS + React          │
+│             ANTARMUKA SISWA         │
+│        Next.js + TypeScript         │
+│        Tailwind CSS + React         │
 └─────────────────┬───────────────────┘
                   │
                   ▼
 ┌─────────────────────────────────────┐
-│        GAME & LEARNING ENGINE       │
+│          MESIN PEMBELAJARAN         │
 │                                     │
-│  • Level Engine                     │
-│  • POE Engine                       │
+│  • Mesin Level                      │
+│  • Mesin POE                        │
 │  • Pathfinding                      │
-│  • Scoring                          │
-│  • Telemetry                        │
-│  • Progress Tracking                │
+│  • Sistem Skor                      │
+│  • Telemetri                        │
+│  • Pelacakan Progres                │
 └─────────────────┬───────────────────┘
                   │
                   ▼
@@ -596,49 +610,47 @@ A.R.K.A. uses a modern web architecture.
 │              SUPABASE               │
 │                                     │
 │  • PostgreSQL                       │
-│  • Authentication                   │
-│  • Student Data                     │
-│  • Learning Telemetry               │
-│  • Progress                         │
+│  • Autentikasi                      │
+│  • Data Siswa                       │
+│  • Telemetri Pembelajaran           │
+│  • Progres                           │
 └─────────────────┬───────────────────┘
                   │
                   ▼
 ┌─────────────────────────────────────┐
-│          TEACHER DASHBOARD          │
+│             DASBOR GURU             │
 │                                     │
-│  • Class Analytics                  │
-│  • Student Profiles                 │
-│  • Progress Monitoring               │
-│  • Learning Indicators              │
+│  • Analitik Kelas                   │
+│  • Profil Siswa                     │
+│  • Pemantauan Progres               │
+│  • Indikator Pembelajaran           │
 └─────────────────────────────────────┘
 ```
 
 ---
 
-# 14. Technology Stack
+## 13. Teknologi
 
-| Layer | Technology |
+| Lapisan | Teknologi |
 |---|---|
 | Framework | Next.js 15 |
-| Language | TypeScript |
-| UI | React |
+| Bahasa | TypeScript |
+| Antarmuka | React |
 | Styling | Tailwind CSS |
 | Backend | Supabase |
-| Database | PostgreSQL |
-| Authentication | Supabase Auth |
+| Basis Data | PostgreSQL |
+| Autentikasi | Supabase Auth |
 | Deployment | Vercel |
 | Pathfinding | A* |
-| Learning Model | POE |
-| Analytics | Custom Telemetry |
+| Kerangka Pembelajaran | POE |
+| Analitik | Custom Telemetry |
 | Version Control | Git / GitHub |
 
 ---
 
-# 15. Database Structure
+## 14. Struktur Basis Data
 
-The current prototype uses Supabase/PostgreSQL.
-
-A simplified conceptual structure is:
+Struktur konseptual basis data:
 
 ```text
 users
@@ -656,7 +668,7 @@ users
  └── achievements
 ```
 
-Example SQL structure:
+Contoh struktur SQL:
 
 ```sql
 create table profiles (
@@ -697,59 +709,56 @@ create table reflections (
 
 ---
 
-# 16. Security Considerations
+## 15. Keamanan Data
 
-A.R.K.A. handles student-related learning data. Therefore, database security must be treated as a core implementation requirement.
+A.R.K.A. memproses data aktivitas pembelajaran siswa sehingga keamanan basis data harus menjadi bagian penting dari implementasi.
 
-### Important
-
-During early prototyping, permissive Supabase Row Level Security policies may be used for development.
-
-For example:
+Kebijakan Supabase yang terlalu permisif, misalnya:
 
 ```sql
 using (true)
 ```
 
-or:
+atau:
 
 ```sql
 with check (true)
 ```
 
-should **not** be considered production-ready policies for student data.
+tidak disarankan untuk lingkungan produksi.
 
-For production deployment, policies should restrict access according to:
+Untuk deployment produksi, Row Level Security (RLS) perlu membatasi akses berdasarkan:
 
-- Authenticated user identity
-- Student ownership
-- Teacher role
-- Class membership
-- Administrative privileges
+- Identitas pengguna
+- Kepemilikan data
+- Peran pengguna
+- Keanggotaan kelas
+- Hak akses guru
+- Hak akses administrator
 
-Example conceptual policy:
+Model akses konseptual:
 
 ```text
-Student
+SISWA
   ↓
-Can access own learning data
+Mengakses data pembelajarannya sendiri
 
-Teacher
+GURU
   ↓
-Can access assigned class data
+Mengakses data kelas yang menjadi tanggung jawabnya
 
-Administrator
+ADMINISTRATOR
   ↓
-Can manage authorized platform data
+Mengelola data sesuai hak akses
 ```
 
-Never expose sensitive student information through unrestricted public database policies.
+Jangan menyimpan secret key di sisi klien dan jangan memasukkan file `.env.local` ke repository.
 
 ---
 
-# 17. Project Structure
+## 16. Struktur Proyek
 
-A simplified project structure:
+Struktur proyek yang direkomendasikan:
 
 ```text
 arka/
@@ -794,62 +803,54 @@ arka/
 
 ---
 
-# 18. Installation
+## 17. Instalasi
 
-## Prerequisites
+### Prasyarat
 
-Make sure the following are installed:
+Pastikan perangkat telah memiliki:
 
 - Node.js 20+
 - npm
 - Git
-- Supabase account
+- Akun Supabase
 
----
-
-## Clone Repository
+### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/arka.git
+git clone https://github.com/USERNAME/arka.git
 cd arka
 ```
 
----
-
-## Install Dependencies
+### Instal Dependensi
 
 ```bash
 npm install
 ```
 
----
+### Konfigurasi Environment
 
-## Configure Environment Variables
-
-Create:
+Buat file:
 
 ```text
 .env.local
 ```
 
-Then add:
+Kemudian masukkan:
 
 ```env
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+NEXT_PUBLIC_SUPABASE_URL=alamat_supabase_anda
+NEXT_PUBLIC_SUPABASE_ANON_KEY=anon_key_supabase_anda
 ```
 
-Do not commit `.env.local` to GitHub.
+Jangan commit `.env.local` ke GitHub.
 
----
-
-## Run Development Server
+### Jalankan Mode Pengembangan
 
 ```bash
 npm run dev
 ```
 
-Open:
+Kemudian buka:
 
 ```text
 http://localhost:3000
@@ -857,15 +858,15 @@ http://localhost:3000
 
 ---
 
-# 19. Build for Production
+## 18. Menjalankan Mode Produksi
 
-Run:
+Buat build:
 
 ```bash
 npm run build
 ```
 
-Then:
+Kemudian jalankan:
 
 ```bash
 npm start
@@ -873,317 +874,286 @@ npm start
 
 ---
 
-# 20. Deployment
+## 19. Deployment
 
-A.R.K.A. is designed to be deployable through Vercel.
+A.R.K.A. dapat dideploy menggunakan Vercel.
 
-Typical deployment workflow:
+Alur deployment:
 
 ```text
 GitHub Repository
        ↓
      Vercel
        ↓
-   Build Next.js
+Build Next.js
        ↓
-Production Deployment
+Deployment
        ↓
-    A.R.K.A.
+A.R.K.A.
 ```
 
-Required environment variables must be configured inside the Vercel project settings.
+Environment variables harus dikonfigurasi melalui pengaturan proyek deployment.
 
 ---
 
-# 21. Learning Flow
+## 20. Alur Pembelajaran
 
-The complete student experience follows:
+Pengalaman utama siswa mengikuti alur:
 
 ```text
 LOGIN
   ↓
 DASHBOARD
   ↓
-SELECT LEVEL
+PILIH LEVEL
   ↓
 PREDICT
   ↓
 SOLVE
   ↓
-OBSERVE RESULT
+OBSERVE
   ↓
 EXPLAIN
   ↓
 REFLECT
   ↓
-ANALYTICS UPDATE
+PEMBARUAN ANALITIK
   ↓
-NEXT CHALLENGE
+TANTANGAN BERIKUTNYA
 ```
 
-The important distinction is that **completion is not the only endpoint**.
+Dengan pendekatan ini, penyelesaian tantangan bukan satu-satunya data yang dianggap penting.
 
-Student interaction generates process data that can be used to understand learning behavior.
+Interaksi siswa sepanjang proses dapat menghasilkan data yang menggambarkan pola belajar dan strategi pemecahan masalah.
 
 ---
 
-# 22. Example Challenge
+## 21. Contoh Tantangan
 
-A typical challenge can be represented as:
+Contoh alur sebuah tantangan:
 
 ```text
 ┌─────────────────────────────┐
-│       CHALLENGE              │
-│                              │
-│  Help the character reach   │
-│  the castle.                 │
-│                              │
-│  PREDICT                     │
-│  Which route will work?      │
-│                              │
-│  [ Route A ] [ Route B ]     │
-│                              │
-└──────────────┬──────────────┘
-               ↓
-          EXECUTE
-               ↓
-┌─────────────────────────────┐
-│          OBSERVE             │
-│                              │
-│  Did the character reach     │
-│  the destination?            │
-└──────────────┬──────────────┘
-               ↓
-           EXPLAIN
-               ↓
-┌─────────────────────────────┐
-│ Why did your strategy work? │
+│          TANTANGAN          │
 │                             │
-│ [ Student explanation ]     │
+│ Bantu karakter menuju       │
+│ kastel.                     │
+│                             │
+│ PREDICT                     │
+│ Rute mana yang akan berhasil?│
+│                             │
+│ [ Rute A ]   [ Rute B ]     │
+└──────────────┬──────────────┘
+               ↓
+            SOLVE
+               ↓
+┌─────────────────────────────┐
+│           OBSERVE           │
+│                             │
+│ Apakah karakter mencapai    │
+│ tujuan?                     │
+└──────────────┬──────────────┘
+               ↓
+            EXPLAIN
+               ↓
+┌─────────────────────────────┐
+│ Mengapa strategi tersebut   │
+│ berhasil atau gagal?        │
+│                             │
+│ [ Penjelasan siswa ]        │
 └──────────────┬──────────────┘
                ↓
             REFLECT
                ↓
-       NEXT CHALLENGE
+       TANTANGAN BERIKUTNYA
 ```
 
 ---
 
-# 23. Design Principles
+## 22. Prinsip Desain
 
-A.R.K.A. follows several interface and interaction principles.
+### 22.1 Pembelajaran sebagai Prioritas
 
-### 23.1 Learning First
+Elemen gamifikasi digunakan untuk mendukung proses pembelajaran.
 
-Gamification should support learning rather than dominate it.
+### 22.2 Beban Kognitif Rendah
 
-### 23.2 Minimal Cognitive Load
+Antarmuka menghindari ornamen yang tidak diperlukan dan stimulus visual berlebihan.
 
-Interfaces avoid unnecessary visual decoration and excessive simultaneous stimuli.
+### 22.3 Visibilitas Proses
 
-### 23.3 Process Visibility
+Aktivitas penting siswa dibuat dapat diamati dan dianalisis.
 
-Important learning actions should be observable and measurable.
+### 22.4 Kompleksitas Bertahap
 
-### 23.4 Progressive Complexity
+Tantangan berkembang secara progresif.
 
-Challenges increase gradually rather than introducing high complexity immediately.
+### 22.5 Interaksi Reflektif
 
-### 23.5 Reflective Interaction
+Siswa diberi kesempatan untuk membandingkan prediksi dengan hasil aktual.
 
-Students are encouraged to compare their predictions with actual outcomes.
+### 22.6 Progres Individu
 
-### 23.6 Personal Progress
-
-The system emphasizes individual improvement rather than constant comparison with other students.
+Sistem memprioritaskan peningkatan kemampuan siswa dibandingkan kompetisi antarsiswa.
 
 ---
 
-# 24. Research Potential
+## 23. Potensi Penelitian
 
-A.R.K.A. can serve not only as an educational application but also as a research platform.
-
-Potential research data include:
-
-- Interaction sequences
-- Prediction accuracy
-- Attempt patterns
-- Hint dependency
-- Solution efficiency
-- Strategy changes
-- Reflection responses
-- Level progression
-- Computational-thinking profiles
-
-This makes the platform suitable for research involving:
+A.R.K.A. dapat dikembangkan sebagai platform penelitian untuk bidang:
 
 - Computational Thinking
-- Educational Technology
+- Teknologi Pendidikan
 - Learning Analytics
-- Metacognition
-- Gamification
+- Metakognisi
+- Gamifikasi
 - Human–Computer Interaction
 - Adaptive Learning
-- Digital Learning Environments
+- Digital Learning Environment
 
-However, the operational indicators should be empirically validated before being interpreted as established psychological or educational constructs.
+Data yang berpotensi dianalisis meliputi:
 
----
+- Urutan interaksi
+- Ketepatan prediksi
+- Pola percobaan
+- Penggunaan petunjuk
+- Efisiensi solusi
+- Perubahan strategi
+- Respons refleksi
+- Progres level
+- Profil Computational Thinking
 
-# 25. Development Roadmap
-
-## Phase 1 — Core Prototype
-
-- [x] Basic interface
-- [x] Authentication
-- [x] Level system
-- [x] Student progress
-- [x] Basic gameplay
-- [x] POE interaction
-
-## Phase 2 — Learning Analytics
-
-- [x] Attempt tracking
-- [x] Hint tracking
-- [x] Prediction tracking
-- [x] Efficiency metrics
-- [x] Student profile
-
-## Phase 3 — Teacher Dashboard
-
-- [x] Student progress
-- [x] Class overview
-- [x] Learning profile
-- [x] Analytics visualization
-
-## Phase 4 — Advanced Learning Engine
-
-- [ ] More adaptive difficulty
-- [ ] Improved metacognitive indicators
-- [ ] Advanced learning analytics
-- [ ] Strategy classification
-- [ ] Empirical validation
-
-## Phase 5 — Research Deployment
-
-- [ ] Classroom pilot
-- [ ] Expert validation
-- [ ] Usability study
-- [ ] Learning outcome analysis
-- [ ] Longitudinal learning analytics
+Apabila digunakan sebagai instrumen penelitian, indikator dan konstruk perlu melalui validasi empiris sebelum digunakan untuk membuat klaim pengukuran yang lebih luas.
 
 ---
 
-# 26. Limitations
+## 24. Keterbatasan
 
-The current version of A.R.K.A. is a prototype.
+Versi saat ini merupakan prototipe sehingga beberapa indikator masih bersifat operasional.
 
-Several aspects should therefore be interpreted cautiously.
+### Validitas Konstruk
 
-### Construct validity
+Lima indikator belum dapat dianggap sebagai instrumen psikometrik tervalidasi.
 
-The five learning indicators are currently operational metrics rather than fully validated psychometric constructs.
+### Metakognisi
 
-### Metacognition measurement
+Ketepatan prediksi tidak merepresentasikan keseluruhan konstruk metakognisi.
 
-Prediction accuracy alone does not represent the complete construct of metacognition.
+### Kemandirian
 
-### Persistence measurement
+Rendahnya penggunaan petunjuk tidak secara otomatis berarti siswa memiliki persistence atau ketekunan yang tinggi.
 
-Hint independence is related to autonomy but should not automatically be interpreted as persistence.
+### Dekomposisi
 
-### Decomposition measurement
+Rasio efisiensi merupakan indikator tidak langsung dan perlu divalidasi jika digunakan sebagai ukuran kemampuan dekomposisi.
 
-Efficiency-based metrics should be empirically examined before being treated as a direct measurement of decomposition ability.
+### Penalaran Spasial
 
-### Spatial reasoning
-
-Attempt count is an indirect behavioral indicator and should ideally be combined with task-specific spatial reasoning measures.
-
-These limitations provide directions for subsequent empirical validation.
+Jumlah percobaan merupakan indikator perilaku tidak langsung. Pengukuran yang lebih kuat dapat menggabungkannya dengan karakteristik tugas spasial.
 
 ---
 
-# 27. Contribution
+## 25. Peta Pengembangan
 
-A.R.K.A. proposes an integrated learning environment in which:
+### Fase 1 — Prototipe Inti
 
-```text
-Gamification
-      +
-Computational Thinking
-      +
-POE
-      +
-Metacognitive Reflection
-      +
-Learning Analytics
-      ↓
-Process-Oriented Learning Environment
-```
+- [x] Antarmuka dasar
+- [x] Autentikasi
+- [x] Sistem level
+- [x] Progres siswa
+- [x] Gameplay dasar
+- [x] Interaksi POE
 
-The central contribution is not merely the presentation of educational game content, but the integration of **reasoning, prediction, action, observation, explanation, and reflection** into a single learning workflow.
+### Fase 2 — Analitik Pembelajaran
 
----
+- [x] Pelacakan percobaan
+- [x] Pelacakan petunjuk
+- [x] Pelacakan prediksi
+- [x] Metrik efisiensi
+- [x] Profil siswa
 
-# 28. Author & Credit
+### Fase 3 — Dasbor Guru
 
-## Creator
+- [x] Progres siswa
+- [x] Ringkasan kelas
+- [x] Profil pembelajaran
+- [x] Visualisasi analitik
 
-**M. Akda Barri**
+### Fase 4 — Mesin Pembelajaran Lanjutan
 
-Conceptualization, system architecture, learning design, computational-thinking framework, POE integration, game mechanics, implementation, learning analytics design, and documentation.
+- [ ] Tingkat kesulitan adaptif
+- [ ] Indikator metakognitif yang lebih komprehensif
+- [ ] Analitik pembelajaran lanjutan
+- [ ] Klasifikasi strategi
+- [ ] Validasi empiris
 
-<p align="center">
-  <strong>A.R.K.A. — Adaptive Reasoning & Knowledge Architecture</strong>
-</p>
+### Fase 5 — Implementasi Penelitian
 
-<p align="center">
-  Designed and developed by <strong>M. Akda Barri</strong>
-</p>
-
----
-
-# 29. License
-
-This project is released under the **MIT License**.
-
-You are free to:
-
-- Use
-- Copy
-- Modify
-- Merge
-- Publish
-- Distribute
-- Sublicense
-
-subject to the conditions of the MIT License.
-
-See [`LICENSE`](LICENSE) for the complete license text.
+- [ ] Uji coba kelas
+- [ ] Validasi ahli
+- [ ] Studi usability
+- [ ] Analisis hasil belajar
+- [ ] Analisis pembelajaran longitudinal
 
 ---
 
-# 30. Citation
+## 26. Kontributor
 
-If you use A.R.K.A. in an academic project, research project, presentation, or educational development, please credit:
+### M. Akda Barri
+
+**M. Akda Barri** merupakan penggagas dan pengembang A.R.K.A.
+
+Kontribusi utama mencakup:
+
+- Konseptualisasi A.R.K.A.
+- Perancangan arsitektur sistem
+- Perancangan pengalaman pembelajaran
+- Integrasi Computational Thinking
+- Integrasi Predict–Observe–Explain
+- Perancangan mekanisme permainan
+- Perancangan indikator pembelajaran
+- Perancangan learning analytics
+- Pengembangan sistem
+- Dokumentasi proyek
+
+---
+
+## 27. Sitasi
+
+Apabila A.R.K.A. digunakan dalam proyek akademik, penelitian, presentasi, atau pengembangan pembelajaran, gunakan atribusi berikut:
 
 ```text
 Barri, M. A. (2026).
 A.R.K.A.: Adaptive Reasoning & Knowledge Architecture.
-Gamified Computational Thinking and Metacognitive Learning Platform.
+Platform Pembelajaran Gamifikasi untuk Computational Thinking dan Metakognisi.
 ```
 
 ---
 
+## 28. Lisensi
+
+A.R.K.A. dirilis menggunakan **MIT License**.
+
+Lisensi ini mengizinkan penggunaan, penyalinan, modifikasi, penggabungan, publikasi, distribusi, dan sublicensing dengan tetap mengikuti ketentuan MIT License.
+
+Lihat file [`LICENSE`](LICENSE) untuk ketentuan lengkap.
+
+---
+
 <p align="center">
+  <strong>🐍 A.R.K.A.</strong>
+</p>
 
-### 🐍 Learn. Predict. Observe. Explain. Reflect.
+<p align="center">
+  Learn. Predict. Observe. Explain. Reflect.
+</p>
 
-**A.R.K.A.**
+<p align="center">
+  <strong>Adaptive Reasoning & Knowledge Architecture</strong>
+</p>
 
-*Adaptive Reasoning & Knowledge Architecture*
-
+<p align="center">
+  Developed by <strong>M. Akda Barri</strong>
 </p>
 
 <p align="center">
