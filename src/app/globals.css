@@ -1,8 +1,16 @@
+/* src/app/globals.css */
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f1f5f9;
+  --foreground: #0f172a;
+}
+
+.dark {
+  --background: #020617;
+  --foreground: #f8fafc;
 }
 
 @theme inline {
@@ -12,15 +20,12 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Transisi Halus Khusus Elemen Utama (Ringan & Cepat Tanpa Lag) */
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
+  margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 200ms ease, color 200ms ease;
 }
